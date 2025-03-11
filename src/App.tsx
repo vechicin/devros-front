@@ -17,6 +17,9 @@ import {
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/swiper-bundle.css";
 
 function App() {
   return (
@@ -29,17 +32,17 @@ function App() {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              AI-Powered Customer Support Agents for Every Business
+              Implementamos soluciones de inteligencia artificial en tu negocio
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100">
-              Custom AI chat, voice, and email agents designed to transform your
-              customer support.
+              Automatización de procesos, chatbots, consultoría en IA,
+              entrenamiento en IA para tu empresa.
             </p>
             <a
               href="#contact"
               className="inline-flex items-center bg-white text-blue-900 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition duration-300"
             >
-              Get Started
+              Contáctanos
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
           </div>
@@ -51,14 +54,17 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-              About Devros
+              Acerca de
             </h2>
             <p className="text-lg text-gray-700 mb-8">
-              Founded by three friends with a passion for AI and customer
-              experience, Devros is revolutionizing how businesses handle
-              customer support. Our mission is to become the go-to company for
-              AI customer agents, helping businesses automate and enhance their
-              customer service experience.
+              En Devros, nuestra misión es potenciar a empresas de todos los
+              tamaños mediante soluciones de inteligencia artificial
+              personalizadas, mejorando la eficiencia operativa, reduciendo
+              costos, optimizando la experiencia de los usuarios de nuestros
+              clientes y tomando decisiones basadas en datos. Nos apasiona
+              democratizar la inteligencia artificial, haciendo accesible su
+              implementación a través de una consultoría estratégica y
+              entrenamiento especializado en IA, adaptado a cada organización.
             </p>
             <div className="flex justify-center">
               <img
@@ -76,100 +82,336 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-              Our Services
+              Nuestros Servicios
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              We create custom AI solutions by leveraging your knowledge base
-              and designing tailored workflows that meet your specific
-              requirements.
+              Nos especializamos en el diseño y desarrollo de agentes de IA,
+              chatbots inteligentes, y soluciones de automatización de procesos
+              que se adaptan a las necesidades específicas de cada negocio:
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Chat Agents */}
-            <div className="bg-white rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl">
-              <div className="bg-blue-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <MessageSquare className="h-8 w-8 text-blue-600" />
+          <Swiper
+            modules={[Navigation]}
+            spaceBetween={20}
+            slidesPerView={3}
+            loop={true}
+            navigation={true}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+            }}
+          >
+            {/* Automatización de Procesos */}
+            <SwiperSlide>
+              <div className="bg-white rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl">
+                <div className="bg-blue-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                  <MessageSquare className="h-8 w-8 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">
+                  Automatización de Procesos
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Optimizamos tus operaciones mediante automatización
+                  inteligente de procesos, reduciendo tiempos, costos y errores.
+                  Mejora la eficiencia de tu negocio con soluciones IA a medida.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>24/7 customer support</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Multilingual capabilities</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Seamless handoff to human agents</span>
+                  </li>
+                </ul>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
-                AI Chat Agents
-              </h3>
-              <p className="text-gray-700 mb-4">
-                Fully customizable chatbots that provide seamless customer
-                interaction across your website and messaging platforms.
-              </p>
-              <ul className="space-y-2">
-                <li className="flex items-center text-gray-700">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                  <span>24/7 customer support</span>
-                </li>
-                <li className="flex items-center text-gray-700">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                  <span>Multilingual capabilities</span>
-                </li>
-                <li className="flex items-center text-gray-700">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                  <span>Seamless handoff to human agents</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Voice Agents */}
-            <div className="bg-white rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl">
-              <div className="bg-indigo-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <Phone className="h-8 w-8 text-indigo-600" />
+            </SwiperSlide>
+            {/* Servicio al Cliente */}
+            <SwiperSlide>
+              <div className="bg-white rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl">
+                <div className="bg-indigo-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                  <Phone className="h-8 w-8 text-indigo-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">
+                  Agente IA/Chatbot - Servicio al Cliente
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Desarrollamos chatbots de atención al cliente que responden
+                  consultas 24/7, mejorando la experiencia de usuario y reducen
+                  la carga de trabajo de tus equipos.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Natural voice interaction</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Call routing and qualification</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Sentiment analysis</span>
+                  </li>
+                </ul>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
-                AI Voice Agents
-              </h3>
-              <p className="text-gray-700 mb-4">
-                Voice-based AI assistants that handle phone support with
-                natural-sounding conversations and intelligent responses.
-              </p>
-              <ul className="space-y-2">
-                <li className="flex items-center text-gray-700">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                  <span>Natural voice interaction</span>
-                </li>
-                <li className="flex items-center text-gray-700">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                  <span>Call routing and qualification</span>
-                </li>
-                <li className="flex items-center text-gray-700">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                  <span>Sentiment analysis</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Email Agents */}
-            <div className="bg-white rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl">
-              <div className="bg-purple-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <Mail className="h-8 w-8 text-purple-600" />
+            </SwiperSlide>
+            {/* Ventas y CRM */}
+            <SwiperSlide>
+              <div className="bg-white rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl">
+                <div className="bg-purple-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                  <Mail className="h-8 w-8 text-purple-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">
+                  Agente IA/Chatbot - Ventas y CRM
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Impulsa tus ventas con agentes IA que gestionan prospectos,
+                  califican leads y automatizan tareas en tu CRM, mejorando la
+                  conversión y el seguimiento de clientes.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Automated email triage</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Personalized responses</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Attachment and data processing</span>
+                  </li>
+                </ul>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
-                AI Email Agents
-              </h3>
-              <p className="text-gray-700 mb-4">
-                AI-driven email support systems that categorize, prioritize, and
-                respond to customer inquiries with minimal delay.
-              </p>
-              <ul className="space-y-2">
-                <li className="flex items-center text-gray-700">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                  <span>Automated email triage</span>
-                </li>
-                <li className="flex items-center text-gray-700">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                  <span>Personalized responses</span>
-                </li>
-                <li className="flex items-center text-gray-700">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                  <span>Attachment and data processing</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+            </SwiperSlide>
+            {/* Gestión de Compras y Logística */}
+            <SwiperSlide>
+              <div className="bg-white rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl">
+                <div className="bg-purple-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                  <Mail className="h-8 w-8 text-purple-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">
+                  Agente IA/Chatbot - Gestión de Compras y Logística
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Implementamos chatbots inteligentes que optimizan la gestión
+                  de compras y logística, agilizando órdenes, seguimiento de
+                  envíos y control de inventarios en tiempo real.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Automated email triage</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Personalized responses</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Attachment and data processing</span>
+                  </li>
+                </ul>
+              </div>
+            </SwiperSlide>
+            {/* Marketing */}
+            <SwiperSlide>
+              <div className="bg-white rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl">
+                <div className="bg-purple-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                  <Mail className="h-8 w-8 text-purple-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">
+                  Agente IA/Chatbot - Marketing
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Crea campañas personalizadas con agentes IA para marketing.
+                  Automatiza respuestas, segmenta audiencias y mejora la
+                  interacción con tus clientes en múltiples canales.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Automated email triage</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Personalized responses</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Attachment and data processing</span>
+                  </li>
+                </ul>
+              </div>
+            </SwiperSlide>
+            {/* Asistente Virtual */}
+            <SwiperSlide>
+              <div className="bg-white rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl">
+                <div className="bg-purple-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                  <Mail className="h-8 w-8 text-purple-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">
+                  Agente IA/Chatbot - Asistente Virtual
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Desarrollamos asistentes virtuales inteligentes que organizan
+                  agendas, gestionan correos y mejoran la productividad en
+                  tareas administrativas.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Automated email triage</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Personalized responses</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Attachment and data processing</span>
+                  </li>
+                </ul>
+              </div>
+            </SwiperSlide>
+            {/* Asistente Virtual */}
+            <SwiperSlide>
+              <div className="bg-white rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl">
+                <div className="bg-purple-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                  <Mail className="h-8 w-8 text-purple-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">
+                  Agente IA/Chatbot - Asistente Legal
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Ofrecemos asistentes legales impulsados por IA que facilitan
+                  la redacción de documentos, el análisis de contratos y la
+                  gestión de consultas legales básicas de forma rápida y segura.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Automated email triage</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Personalized responses</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Attachment and data processing</span>
+                  </li>
+                </ul>
+              </div>
+            </SwiperSlide>
+            {/* Consultoría en IA */}
+            <SwiperSlide>
+              <div className="bg-white rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl">
+                <div className="bg-purple-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                  <Mail className="h-8 w-8 text-purple-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">
+                  Consultoría en IA
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Te guiamos en la implementación de inteligencia artificial,
+                  desde la estrategia hasta la ejecución. Nuestro servicio de
+                  consultoría en IA adapta la tecnología a las necesidades de tu
+                  negocio.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Automated email triage</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Personalized responses</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Attachment and data processing</span>
+                  </li>
+                </ul>
+              </div>
+            </SwiperSlide>
+            {/* Entrenamiento IA */}
+            <SwiperSlide>
+              <div className="bg-white rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl">
+                <div className="bg-purple-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                  <Mail className="h-8 w-8 text-purple-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">
+                  Entrenamiento IA
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Capacitamos a tus equipos con entrenamientos en inteligencia
+                  artificial, ayudándoles a comprender, adoptar y aplicar
+                  soluciones IA en sus procesos diarios.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Automated email triage</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Personalized responses</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Attachment and data processing</span>
+                  </li>
+                </ul>
+              </div>
+            </SwiperSlide>
+            {/* Dashboards Inteligentes */}
+            <SwiperSlide>
+              <div className="bg-white rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl">
+                <div className="bg-purple-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                  <Mail className="h-8 w-8 text-purple-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">
+                  Creación de Dashboards Inteligentes
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Desarrollamos dashboards inteligentes que integran datos en
+                  tiempo real y análisis predictivo, facilitando la toma de
+                  decisiones estratégicas basadas en inteligencia artificial.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Automated email triage</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Personalized responses</span>
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                    <span>Attachment and data processing</span>
+                  </li>
+                </ul>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+          <div className="grid md:grid-cols-3 gap-8"></div>
         </div>
       </section>
 
@@ -178,11 +420,12 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-              How It Works
+              Como Funciona
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              Our streamlined process ensures we deliver AI agents that
-              perfectly match your business needs.
+              Nuestro proceso optimizado garantiza que te entregamos soluciones
+              de IA que se adaptan perfectamente a las necesidades de tu
+              negocio.
             </p>
           </div>
 
@@ -193,11 +436,11 @@ function App() {
                 <Users className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">
-                1. Understand
+                1. Entender
               </h3>
               <p className="text-gray-700">
-                We analyze your current support systems and understand your
-                specific business requirements.
+                Analizamos tus sistemas de soporte actuales y entendemos tus
+                requisitos comerciales específicos.
               </p>
             </div>
 
@@ -207,11 +450,11 @@ function App() {
                 <Workflow className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">
-                2. Design
+                2. Diseñar
               </h3>
               <p className="text-gray-700">
-                We create custom workflows and conversation flows tailored to
-                your customer journey.
+                Creamos flujos de trabajo personalizados y flujos de
+                conversación adaptados a la experiencia de tus clientes.
               </p>
             </div>
 
@@ -221,11 +464,11 @@ function App() {
                 <Bot className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">
-                3. Develop
+                3. Desarrollar
               </h3>
               <p className="text-gray-700">
-                We build and integrate AI agents that seamlessly connect with
-                your existing systems.
+                Creamos e integramos soluciones de IA que se conectan sin
+                problemas con tus sistemas existentes.
               </p>
             </div>
 
@@ -235,11 +478,11 @@ function App() {
                 <Zap className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">
-                4. Support
+                4. Soporte
               </h3>
               <p className="text-gray-700">
-                We provide continuous support, updates, and improvements to
-                ensure optimal performance.
+                Brindamos soporte, actualizaciones y mejoras continuas para
+                garantizar un rendimiento óptimo.
               </p>
             </div>
           </div>
@@ -352,18 +595,18 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-              Get in Touch
+              Contáctanos
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              Ready to transform your customer support with AI? Contact us today
-              for a free consultation.
+              ¿Estás listo para transformar tu organización con IA? Contáctanos
+              hoy para una consulta gratuita.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <h3 className="text-2xl font-bold mb-6 text-gray-900">
-                Contact Information
+                Información de Contacto
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start">
@@ -385,7 +628,7 @@ function App() {
                     <Phone className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-900">Phone</p>
+                    <p className="font-semibold text-gray-900">Teléfono</p>
                     <a
                       href="tel:+1234567890"
                       className="text-blue-600 hover:underline"
@@ -395,9 +638,7 @@ function App() {
                   </div>
                 </div>
                 <div className="mt-8">
-                  <h4 className="font-semibold text-gray-900 mb-4">
-                    Follow Us
-                  </h4>
+                  <h4 className="font-semibold text-gray-900 mb-4">Síguenos</h4>
                   <div className="flex space-x-4">
                     <a
                       href="#"
