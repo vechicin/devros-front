@@ -6,7 +6,7 @@ const ContactForm = () => {
     name: "",
     email: "",
     company: "",
-    inquiryType: "Chat Agent",
+    inquiryType: "",
     message: "",
   });
 
@@ -41,7 +41,7 @@ const ContactForm = () => {
         name: "",
         email: "",
         company: "",
-        inquiryType: "Chat Agent",
+        inquiryType: "",
         message: "",
       });
 
@@ -71,7 +71,7 @@ const ContactForm = () => {
               htmlFor="name"
               className="block text-gray-700 font-medium mb-2"
             >
-              Full Name *
+              Nombre *
             </label>
             <input
               type="text"
@@ -90,7 +90,7 @@ const ContactForm = () => {
               htmlFor="email"
               className="block text-gray-700 font-medium mb-2"
             >
-              Email Address *
+              Email *
             </label>
             <input
               type="email"
@@ -111,7 +111,7 @@ const ContactForm = () => {
               htmlFor="company"
               className="block text-gray-700 font-medium mb-2"
             >
-              Company Name *
+              Compañía *
             </label>
             <input
               type="text"
@@ -130,7 +130,7 @@ const ContactForm = () => {
               htmlFor="inquiryType"
               className="block text-gray-700 font-medium mb-2"
             >
-              Inquiry Type *
+              Tipo de Consulta *
             </label>
             <select
               id="inquiryType"
@@ -140,11 +140,32 @@ const ContactForm = () => {
               required
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
             >
-              <option value="Chat Agent">Chat Agent</option>
-              <option value="Voice Agent">Voice Agent</option>
-              <option value="Email Agent">Email Agent</option>
-              <option value="Consultation">Consultation</option>
-              <option value="Other">Other</option>
+              <option value=""></option>
+              <option value="Process Automation">
+                Automatización de Procesos
+              </option>
+              <option value="Customer Service">
+                Agente IA/Chatbot - Servicio al Cliente
+              </option>
+              <option value="Sales and CRM">
+                Agente IA/Chatbot - Ventas y CRM
+              </option>
+              <option value="Purchase and Logistics">
+                Agente IA/Chatbot - Gestión de Compras y Logística
+              </option>
+              <option value="Marketing"> Agente IA/Chatbot - Marketing</option>
+              <option value="Virtual Assistant">
+                Agente IA/Chatbot - Asistente Virtual
+              </option>
+              <option value="Legal Assistant">
+                Agente IA/Chatbot - Asistente Legal
+              </option>
+              <option value="Consulting">Consultoría en IA</option>
+              <option value="Training">Entrenamiento IA</option>
+              <option value="Dashboards">
+                Creación de Dashboards Inteligentes
+              </option>
+              <option value="Other">Otro</option>
             </select>
           </div>
         </div>
@@ -154,7 +175,7 @@ const ContactForm = () => {
             htmlFor="message"
             className="block text-gray-700 font-medium mb-2"
           >
-            Message *
+            Mensaje *
           </label>
           <textarea
             id="message"
@@ -164,7 +185,7 @@ const ContactForm = () => {
             required
             rows={5}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
-            placeholder="Tell us about your needs..."
+            placeholder="Cuéntanos tus necesidades..."
           ></textarea>
         </div>
 
@@ -203,7 +224,7 @@ const ContactForm = () => {
             </>
           ) : (
             <>
-              Request a Free Consultation
+              Solicita una Consulta Gratuita
               <Send className="ml-2 h-5 w-5" />
             </>
           )}
