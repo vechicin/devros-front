@@ -13,6 +13,7 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState(false);
+  const [validationErrors, setValidationErrors] = useState<string[]>([]);
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -30,6 +31,7 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitError(false);
+    setValidationErrors([]);
 
     const leadData = {
       lead: {
@@ -67,6 +69,7 @@ const ContactForm = () => {
       } else {
         const errorData = await response.json();
         setSubmitError(true);
+        setValidationErrors(errorData.errors || []);
         console.error("Error creating lead:", errorData.errors);
       }
     } catch (error) {
@@ -90,6 +93,16 @@ const ContactForm = () => {
           <p>Se produjo un error al enviar tu mensaje. Inténtalo de nuevo.</p>
         </div>
       ) : null}
+
+      {validationErrors.length > 0 && (
+        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6">
+          <ul>
+            {validationErrors.map((error, index) => (
+              <li key={index}>{error}</li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       <form onSubmit={handleSubmit}>
         <div className="grid md:grid-cols-2 gap-6 mb-6">
