@@ -13,6 +13,7 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState(false);
+  const [validationErrors, setValidationErrors] = useState<string[]>([]);
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -26,43 +27,82 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitError(false);
+    setValidationErrors([]);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
+    const leadData = {
+      lead: {
+        full_name: formData.name,
+        email: formData.email,
+        company: formData.company,
+        inquiry_type: formData.inquiryType,
+        message: formData.message,
+      },
+    };
+    console.log(leadData);
 
-      // Reset form after successful submission
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        inquiryType: "",
-        message: "",
+    try {
+      const response = await fetch("http://localhost:3000/leads", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(leadData),
       });
 
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setSubmitSuccess(false);
-      }, 5000);
-    }, 1500);
+      if (response.ok) {
+        setSubmitSuccess(true);
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          inquiryType: "",
+          message: "",
+        });
+
+        setTimeout(() => {
+          setSubmitSuccess(false);
+        }, 5000);
+      } else {
+        const errorData = await response.json();
+        setSubmitError(true);
+        setValidationErrors(errorData.errors || []);
+        console.error("Error creating lead:", errorData.errors);
+      }
+    } catch (error) {
+      setSubmitError(true);
+      console.error("Network error:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-8">
       {submitSuccess ? (
         <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
-          <p>Thank you for your message! We'll get back to you shortly.</p>
+          <p>
+            Gracias por tu mensaje. Nos pondremos en contacto contigo en breve.
+          </p>
         </div>
       ) : submitError ? (
         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6">
-          <p>There was an error sending your message. Please try again.</p>
+          <p>Se produjo un error al enviar tu mensaje. Inténtalo de nuevo.</p>
         </div>
       ) : null}
+
+      {validationErrors.length > 0 && (
+        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6">
+          <ul>
+            {validationErrors.map((error, index) => (
+              <li key={index}>{error}</li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       <form onSubmit={handleSubmit}>
         <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -141,31 +181,29 @@ const ContactForm = () => {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
             >
               <option value=""></option>
-              <option value="Process Automation">
+              <option value="process_automation">
                 Automatización de Procesos
               </option>
-              <option value="Customer Service">
+              <option value="customer_service">
                 Agente IA/Chatbot - Servicio al Cliente
               </option>
-              <option value="Sales and CRM">
-                Agente IA/Chatbot - Ventas y CRM
-              </option>
-              <option value="Purchase and Logistics">
+              <option value="sales">Agente IA/Chatbot - Ventas y CRM</option>
+              <option value="logistics">
                 Agente IA/Chatbot - Gestión de Compras y Logística
               </option>
-              <option value="Marketing"> Agente IA/Chatbot - Marketing</option>
-              <option value="Virtual Assistant">
+              <option value="marketing"> Agente IA/Chatbot - Marketing</option>
+              <option value="virtual_assistant">
                 Agente IA/Chatbot - Asistente Virtual
               </option>
-              <option value="Legal Assistant">
+              <option value="legal_assistant">
                 Agente IA/Chatbot - Asistente Legal
               </option>
-              <option value="Consulting">Consultoría en IA</option>
-              <option value="Training">Entrenamiento IA</option>
-              <option value="Dashboards">
+              <option value="consultancy">Consultoría en IA</option>
+              <option value="training">Entrenamiento IA</option>
+              <option value="smart_dashboards">
                 Creación de Dashboards Inteligentes
               </option>
-              <option value="Other">Otro</option>
+              <option value="other">Otro</option>
             </select>
           </div>
         </div>
