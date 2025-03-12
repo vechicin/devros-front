@@ -71,7 +71,7 @@ const ContactForm = () => {
               htmlFor="name"
               className="block text-gray-700 font-medium mb-2"
             >
-              Nombre *
+              Nombre Completo *
             </label>
             <input
               type="text"
