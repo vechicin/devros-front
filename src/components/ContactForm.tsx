@@ -81,11 +81,13 @@ const ContactForm = () => {
     <div className="bg-white rounded-lg shadow-lg p-8">
       {submitSuccess ? (
         <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
-          <p>Thank you for your message! We'll get back to you shortly.</p>
+          <p>
+            Gracias por tu mensaje. Nos pondremos en contacto contigo en breve.
+          </p>
         </div>
       ) : submitError ? (
         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6">
-          <p>There was an error sending your message. Please try again.</p>
+          <p>Se produjo un error al enviar tu mensaje. Inténtalo de nuevo.</p>
         </div>
       ) : null}
 
