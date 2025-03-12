@@ -14,7 +14,8 @@ const Footer = () => {
               <span className="ml-2 text-xl font-bold">Devros</span>
             </div>
             <p className="text-gray-400 mb-6">
-              Transforming customer support with AI-powered solutions.
+              Transformando la atención al cliente con soluciones impulsadas por
+              IA.
             </p>
             <div className="flex space-x-4">
               <a
@@ -46,14 +47,14 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">Links</h3>
             <ul className="space-y-2">
               <li>
                 <a
                   href="#about"
                   className="text-gray-400 hover:text-white transition duration-300"
                 >
-                  About Us
+                  Acerca De
                 </a>
               </li>
               <li>
@@ -61,7 +62,7 @@ const Footer = () => {
                   href="#services"
                   className="text-gray-400 hover:text-white transition duration-300"
                 >
-                  Services
+                  Servicios
                 </a>
               </li>
               <li>
@@ -69,7 +70,7 @@ const Footer = () => {
                   href="#how-it-works"
                   className="text-gray-400 hover:text-white transition duration-300"
                 >
-                  How It Works
+                  Como Funciona
                 </a>
               </li>
               <li>
@@ -77,7 +78,7 @@ const Footer = () => {
                   href="#testimonials"
                   className="text-gray-400 hover:text-white transition duration-300"
                 >
-                  Testimonials
+                  Testimonios
                 </a>
               </li>
               <li>
@@ -85,7 +86,7 @@ const Footer = () => {
                   href="#contact"
                   className="text-gray-400 hover:text-white transition duration-300"
                 >
-                  Contact
+                  Contacto
                 </a>
               </li>
             </ul>
@@ -93,14 +94,14 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <h3 className="text-lg font-semibold mb-4">Servicios</h3>
             <ul className="space-y-2">
               <li>
                 <a
                   href="#services"
                   className="text-gray-400 hover:text-white transition duration-300"
                 >
-                  AI Chat Agents
+                  Automatización de Procesos
                 </a>
               </li>
               <li>
@@ -108,7 +109,7 @@ const Footer = () => {
                   href="#services"
                   className="text-gray-400 hover:text-white transition duration-300"
                 >
-                  AI Voice Agents
+                  Agente IA/Chatbot - Servicio al Cliente
                 </a>
               </li>
               <li>
@@ -116,23 +117,63 @@ const Footer = () => {
                   href="#services"
                   className="text-gray-400 hover:text-white transition duration-300"
                 >
-                  AI Email Agents
+                  Agente IA/Chatbot - Ventas y CRM
                 </a>
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="#services"
                   className="text-gray-400 hover:text-white transition duration-300"
                 >
-                  Custom Solutions
+                  Agente IA/Chatbot - Gestión de Compras y Logística
                 </a>
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="#services"
                   className="text-gray-400 hover:text-white transition duration-300"
                 >
-                  Consultation
+                  Agente IA/Chatbot - Marketing
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Agente IA/Chatbot - Asistente Virtual
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Agente IA/Chatbot - Asistente Legal
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Consultoría en IA
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Entrenamiento IA
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  Creación de Dashboards Inteligentes
                 </a>
               </li>
             </ul>
@@ -140,7 +181,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact</h3>
+            <h3 className="text-lg font-semibold mb-4">Contacto</h3>
             <ul className="space-y-2">
               <li className="text-gray-400">
                 <span className="block">Email:</span>
@@ -152,7 +193,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="text-gray-400">
-                <span className="block">Phone:</span>
+                <span className="block">Teléfono:</span>
                 <a
                   href="tel:+1234567890"
                   className="text-blue-400 hover:text-blue-300 transition duration-300"
@@ -167,26 +208,26 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              &copy; {currentYear} Devros. All rights reserved.
+              &copy; {currentYear} Devros. Todos los derechos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a
                 href="#"
                 className="text-gray-400 hover:text-white text-sm transition duration-300"
               >
-                Privacy Policy
+                Política de Privacidad
               </a>
               <a
                 href="#"
                 className="text-gray-400 hover:text-white text-sm transition duration-300"
               >
-                Terms of Service
+                Condiciones de Servicio
               </a>
               <a
                 href="#"
                 className="text-gray-400 hover:text-white text-sm transition duration-300"
               >
-                Cookie Policy
+                Política de Cookies
               </a>
             </div>
           </div>

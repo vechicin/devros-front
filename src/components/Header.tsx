@@ -52,7 +52,7 @@ const Header = () => {
                 isScrolled ? "text-gray-700" : "text-white"
               }`}
             >
-              About
+              Acerca De
             </a>
             <a
               href="#services"
@@ -60,7 +60,7 @@ const Header = () => {
                 isScrolled ? "text-gray-700" : "text-white"
               }`}
             >
-              Services
+              Servicios
             </a>
             <a
               href="#how-it-works"
@@ -68,7 +68,7 @@ const Header = () => {
                 isScrolled ? "text-gray-700" : "text-white"
               }`}
             >
-              How It Works
+              Como Funciona
             </a>
             <a
               href="#testimonials"
@@ -76,7 +76,7 @@ const Header = () => {
                 isScrolled ? "text-gray-700" : "text-white"
               }`}
             >
-              Testimonials
+              Testimonios
             </a>
             <a
               href="#contact"
@@ -84,7 +84,7 @@ const Header = () => {
                 isScrolled ? "text-gray-700" : "text-white"
               }`}
             >
-              Contact
+              Contacto
             </a>
           </nav>
 
@@ -97,7 +97,7 @@ const Header = () => {
                 : "bg-white text-blue-900 hover:bg-blue-50"
             }`}
           >
-            Get Started
+            Contáctanos
           </a>
 
           {/* Mobile Menu Button */}
