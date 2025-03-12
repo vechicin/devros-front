@@ -28,7 +28,7 @@ function App() {
     {
       title: "Agente IA/Chatbot - Servicio al Cliente",
       description:
-        "Desarrollamos chatbots de atención al cliente que responden consultas 24/7, mejorando la experiencia de usuario y reducen la carga de trabajo de tus equipos.",
+        "Desarrollamos chatbots inteligentes de atención al cliente que responden consultas 24/7, mejorando la experiencia de usuario y reducen la carga de trabajo de tus equipos.",
     },
     {
       title: "Agente IA/Chatbot - Ventas y CRM",
