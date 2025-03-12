@@ -23,12 +23,12 @@ function App() {
     {
       title: "Automatización de Procesos",
       description:
-        "Optimizamos tus operaciones mediante la automatización de procesos, reduciendo tiempos, costos y errores. Mejora la eficiencia de tu negocio con soluciones IA a medida.",
+        "Optimizamos tus operaciones mediante la automatización inteligente de procesos, reduciendo tiempos, costos y errores. Mejora la eficiencia de tu negocio con soluciones IA a la medida.",
     },
     {
       title: "Agente IA/Chatbot - Servicio al Cliente",
       description:
-        "Desarrollamos chatbots inteligentes de atención al cliente que responden consultas 24/7, mejorando la experiencia de usuario y reducen la carga de trabajo de tus equipos.",
+        "Desarrollamos chatbots inteligentes de atención al cliente que responden consultas 24/7, mejorando la experiencia de usuario y reduciendo la carga de trabajo de tus equipos.",
     },
     {
       title: "Agente IA/Chatbot - Ventas y CRM",
@@ -47,11 +47,6 @@ function App() {
     },
     {
       title: "Agente IA/Chatbot - Asistente Virtual",
-      description:
-        "Desarrollamos asistentes virtuales inteligentes que organizan agendas, gestionan correos y mejoran la productividad en tareas administrativas.",
-    },
-    {
-      title: "Agente IA/Chatbot - Asistente Legal",
       description:
         "Desarrollamos asistentes virtuales inteligentes que organizan agendas, gestionan correos y mejoran la productividad en tareas administrativas.",
     },
