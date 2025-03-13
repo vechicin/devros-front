@@ -45,7 +45,7 @@ const Header = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden lg:flex space-x-8">
             <a
               href="#about"
               className={`font-medium hover:text-blue-500 transition duration-300 ${
@@ -91,7 +91,7 @@ const Header = () => {
           {/* CTA Button */}
           <a
             href="#contact"
-            className={`hidden md:inline-block px-5 py-2 rounded-lg font-medium transition duration-300 ${
+            className={`hidden lg:inline-block px-5 py-2 rounded-lg font-medium transition duration-300 ${
               isScrolled
                 ? "bg-blue-600 text-white hover:bg-blue-700"
                 : "bg-white text-blue-900 hover:bg-blue-50"
@@ -102,7 +102,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="lg:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
@@ -124,7 +124,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg">
+        <div className="lg:hidden bg-white shadow-lg">
           <div className="container mx-auto px-6 py-4">
             <nav className="flex flex-col space-y-4">
               <a
@@ -132,42 +132,42 @@ const Header = () => {
                 className="font-medium text-gray-700 hover:text-blue-500 transition duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
-                About
+                Acerca De
               </a>
               <a
                 href="#services"
                 className="font-medium text-gray-700 hover:text-blue-500 transition duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Services
+                Servicios
               </a>
               <a
                 href="#how-it-works"
                 className="font-medium text-gray-700 hover:text-blue-500 transition duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
-                How It Works
+                Como Funciona
               </a>
               <a
                 href="#testimonials"
                 className="font-medium text-gray-700 hover:text-blue-500 transition duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Testimonials
+                Testimonios
               </a>
               <a
                 href="#contact"
                 className="font-medium text-gray-700 hover:text-blue-500 transition duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contact
+                Contacto
               </a>
               <a
                 href="#contact"
                 className="inline-block px-5 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Get Started
+                Contáctanos
               </a>
             </nav>
           </div>

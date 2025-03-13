@@ -362,13 +362,13 @@ function App() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-12">
             <div>
               <h3 className="text-2xl font-bold mb-6 text-gray-900">
                 Información de Contacto
               </h3>
-              <div className="space-y-4">
-                <div className="flex items-start">
+              <div className="md:flex justify-between items-center">
+                <div className="flex items-start mt-5">
                   <div className="bg-blue-100 p-3 rounded-full mr-4">
                     <Mail className="h-6 w-6 text-blue-600" />
                   </div>
@@ -382,7 +382,7 @@ function App() {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-start">
+                <div className="flex items-start mt-5">
                   <div className="bg-blue-100 p-3 rounded-full mr-4">
                     <Phone className="h-6 w-6 text-blue-600" />
                   </div>
@@ -396,7 +396,7 @@ function App() {
                     </a>
                   </div>
                 </div>
-                <div className="mt-8">
+                <div className="mt-5">
                   <h4 className="font-semibold text-gray-900 mb-4">Síguenos</h4>
                   <div className="flex space-x-4">
                     <a
