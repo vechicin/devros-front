@@ -45,7 +45,7 @@ const Header = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden lg:flex space-x-8">
             <a
               href="#about"
               className={`font-medium hover:text-blue-500 transition duration-300 ${
@@ -91,7 +91,7 @@ const Header = () => {
           {/* CTA Button */}
           <a
             href="#contact"
-            className={`hidden md:inline-block px-5 py-2 rounded-lg font-medium transition duration-300 ${
+            className={`hidden lg:inline-block px-5 py-2 rounded-lg font-medium transition duration-300 ${
               isScrolled
                 ? "bg-blue-600 text-white hover:bg-blue-700"
                 : "bg-white text-blue-900 hover:bg-blue-50"
@@ -102,7 +102,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="lg:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
@@ -124,7 +124,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg">
+        <div className="lg:hidden bg-white shadow-lg">
           <div className="container mx-auto px-6 py-4">
             <nav className="flex flex-col space-y-4">
               <a
