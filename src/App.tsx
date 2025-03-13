@@ -362,7 +362,7 @@ function App() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-12">
             <div>
               <h3 className="text-2xl font-bold mb-6 text-gray-900">
                 Información de Contacto
