@@ -28,7 +28,7 @@ const CardCarousel: React.FC<CardCarouselProps> = ({ cardArray }) => {
         className="p-6"
         modules={[Navigation]}
         spaceBetween={30}
-        slidesPerView={3}
+        slidesPerView={1}
         loop={true}
         navigation={true}
         pagination={{ clickable: true }}
