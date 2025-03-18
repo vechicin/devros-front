@@ -86,7 +86,7 @@ const Header = () => {
             className={`hidden lg:inline-block px-5 py-2 rounded-lg font-medium transition duration-300 ${
               isScrolled
                 ? "bg-devros-primary-blue text-devros-white hover:bg-devros-secondary-blue"
-                : "bg-devros-primary-blue text-devros-white hover:bg-devros-orange"
+                : "bg-devros-orange text-devros-white hover:bg-devros-primary-blue"
             }`}
           >
             Contáctanos

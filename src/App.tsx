@@ -90,7 +90,7 @@ function App() {
             </p>
             <a
               href="#contact"
-              className="inline-flex items-center bg-devros-white text-devros-secondary-blue font-semibold px-6 py-3 rounded-lg hover:bg-devros-primary-blue hover:text-devros-white transition duration-300"
+              className="inline-flex items-center bg-devros-orange text-devros-white font-semibold px-6 py-3 rounded-lg hover:bg-devros-primary-blue hover:text-devros-white transition duration-300"
             >
               Contáctanos
               <ArrowRight className="ml-2 h-5 w-5" />
