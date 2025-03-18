@@ -190,56 +190,50 @@ function App() {
 
           <div className="grid md:grid-cols-4 gap-8">
             {/* Step 1 */}
-            <div className="text-center">
+            <div className="text-center group relative">
               <div className="bg-devros-secondary-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <Users className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
-                1. Entender
-              </h3>
-              <p className="text-gray-700">
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Entender</h3>
+              <p className="text-gray-700 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
                 Analizamos tus sistemas de soporte actuales y entendemos tus
                 requisitos comerciales específicos.
               </p>
             </div>
 
             {/* Step 2 */}
-            <div className="text-center">
+            <div className="text-center group relative">
               <div className="bg-devros-primary-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <Workflow className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
-                2. Diseñar
-              </h3>
-              <p className="text-gray-700">
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Diseñar</h3>
+              <p className="text-gray-700 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
                 Creamos flujos de trabajo personalizados y flujos de
                 conversación adaptados a la experiencia de tus clientes.
               </p>
             </div>
 
             {/* Step 3 */}
-            <div className="text-center">
+            <div className="text-center group relative">
               <div className="bg-devros-secondary-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <Bot className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">
-                3. Desarrollar
+                Desarrollar
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
                 Creamos e integramos soluciones de IA que se conectan sin
                 problemas con tus sistemas existentes.
               </p>
             </div>
 
             {/* Step 4 */}
-            <div className="text-center">
+            <div className="text-center group relative">
               <div className="bg-devros-primary-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <Zap className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
-                4. Soporte
-              </h3>
-              <p className="text-gray-700">
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Soporte</h3>
+              <p className="text-gray-700 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
                 Brindamos soporte, actualizaciones y mejoras continuas para
                 garantizar un rendimiento óptimo.
               </p>
