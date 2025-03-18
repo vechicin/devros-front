@@ -4,13 +4,13 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-secondary-blue text-devros-white py-12">
+    <footer className="bg-devros-secondary-blue text-devros-white py-12">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-1">
             <div className="flex items-center mb-4">
-              <Bot className="h-8 w-8 text-blue-400" />
+              <Bot className="h-8 w-8 text-devros-primary-blue" />
               <span className="ml-2 text-xl font-bold">Devros</span>
             </div>
             <p className="text-devros-gray mb-6">
@@ -187,7 +187,7 @@ const Footer = () => {
                 <span className="block">Email:</span>
                 <a
                   href="mailto:info@devros.ai"
-                  className="text-blue-400 hover:text-blue-300 transition duration-300"
+                  className="text-devros-primary-blue hover:text-blue-300 transition duration-300"
                 >
                   info@devros.ai
                 </a>
@@ -196,7 +196,7 @@ const Footer = () => {
                 <span className="block">Teléfono:</span>
                 <a
                   href="tel:+1234567890"
-                  className="text-blue-400 hover:text-blue-300 transition duration-300"
+                  className="text-devros-primary-blue hover:text-blue-300 transition duration-300"
                 >
                   +1 (234) 567-890
                 </a>

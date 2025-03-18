@@ -81,7 +81,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-8">
+    <div className="bg-devros-white rounded-lg shadow-lg p-8">
       {submitSuccess ? (
         <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
           <p>
@@ -109,7 +109,7 @@ const ContactForm = () => {
           <div>
             <label
               htmlFor="name"
-              className="block text-gray-700 font-medium mb-2"
+              className="block text-devros-gray font-medium mb-2"
             >
               Nombre Completo *
             </label>
@@ -120,7 +120,7 @@ const ContactForm = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
+              className="w-full px-4 py-2 border border-devros-gray rounded-lg focus:ring-2 focus:ring-devros-primary-blue focus:border-devros-primary-blue transition duration-300"
               placeholder="John Doe"
             />
           </div>
@@ -128,7 +128,7 @@ const ContactForm = () => {
           <div>
             <label
               htmlFor="email"
-              className="block text-gray-700 font-medium mb-2"
+              className="block text-devros-gray font-medium mb-2"
             >
               Email *
             </label>
@@ -139,7 +139,7 @@ const ContactForm = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
+              className="w-full px-4 py-2 border border-devros-gray rounded-lg focus:ring-2 focus:ring-devros-primary-blue focus:border-devros-primary-blue transition duration-300"
               placeholder="john@example.com"
             />
           </div>
@@ -149,7 +149,7 @@ const ContactForm = () => {
           <div>
             <label
               htmlFor="company"
-              className="block text-gray-700 font-medium mb-2"
+              className="block text-devros-gray font-medium mb-2"
             >
               Compañía *
             </label>
@@ -160,7 +160,7 @@ const ContactForm = () => {
               value={formData.company}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
+              className="w-full px-4 py-2 border border-devros-gray rounded-lg focus:ring-2 focus:ring-devros-primary-blue focus:border-devros-primary-blue transition duration-300"
               placeholder="Acme Inc."
             />
           </div>
@@ -168,7 +168,7 @@ const ContactForm = () => {
           <div>
             <label
               htmlFor="inquiryType"
-              className="block text-gray-700 font-medium mb-2"
+              className="block text-devros-gray font-medium mb-2"
             >
               Tipo de Consulta *
             </label>
@@ -178,7 +178,7 @@ const ContactForm = () => {
               value={formData.inquiryType}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
+              className="w-full px-4 py-2 border border-devros-gray rounded-lg focus:ring-2 focus:ring-devros-primary-blue focus:border-devros-primary-blue transition duration-300"
             >
               <option value=""></option>
               <option value="process_automation">
@@ -211,7 +211,7 @@ const ContactForm = () => {
         <div className="mb-6">
           <label
             htmlFor="message"
-            className="block text-gray-700 font-medium mb-2"
+            className="block text-devros-gray font-medium mb-2"
           >
             Mensaje *
           </label>
@@ -222,7 +222,7 @@ const ContactForm = () => {
             onChange={handleChange}
             required
             rows={5}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
+            className="w-full px-4 py-2 border border-devros-gray rounded-lg focus:ring-2 focus:ring-devros-primary-blue focus:border-devros-primary-blue transition duration-300"
             placeholder="Cuéntanos tus necesidades..."
           ></textarea>
         </div>
@@ -230,16 +230,16 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`w-full flex items-center justify-center px-6 py-3 rounded-lg text-white font-semibold transition duration-300 ${
+          className={`w-full flex items-center justify-center px-6 py-3 rounded-lg text-devros-white font-semibold transition duration-300 ${
             isSubmitting
-              ? "bg-blue-400 cursor-not-allowed"
-              : "bg-blue-600 hover:bg-blue-700"
+              ? "bg-devros-primary-blue cursor-not-allowed"
+              : "bg-devros-primary-blue hover:bg-blue-700"
           }`}
         >
           {isSubmitting ? (
             <>
               <svg
-                className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                className="animate-spin -ml-1 mr-3 h-5 w-5 text-devros-white"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -258,7 +258,7 @@ const ContactForm = () => {
                   d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                 ></path>
               </svg>
-              Sending...
+              Enviando...
             </>
           ) : (
             <>

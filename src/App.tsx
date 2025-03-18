@@ -249,7 +249,7 @@ function App() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-20">
+      {/* <section id="testimonials" className="py-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
@@ -259,11 +259,11 @@ function App() {
               Discover how our AI agents have transformed customer support for
               businesses like yours.
             </p>
-          </div>
+          </div> */}
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Testimonial 1 */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
+      {/* <div className="grid md:grid-cols-3 gap-8"> */}
+      {/* Testimonial 1 */}
+      {/* <div className="bg-white rounded-lg shadow-lg p-8">
               <div className="flex items-center mb-4">
                 <div className="text-yellow-400 flex">
                   {[...Array(5)].map((_, i) => (
@@ -289,10 +289,10 @@ function App() {
                   Customer Support Director, TechSolutions Inc.
                 </p>
               </div>
-            </div>
+            </div> */}
 
-            {/* Testimonial 2 */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
+      {/* Testimonial 2 */}
+      {/* <div className="bg-white rounded-lg shadow-lg p-8">
               <div className="flex items-center mb-4">
                 <div className="text-yellow-400 flex">
                   {[...Array(5)].map((_, i) => (
@@ -318,10 +318,10 @@ function App() {
                   Operations Manager, Global Retail
                 </p>
               </div>
-            </div>
+            </div> */}
 
-            {/* Testimonial 3 */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
+      {/* Testimonial 3 */}
+      {/* <div className="bg-white rounded-lg shadow-lg p-8">
               <div className="flex items-center mb-4">
                 <div className="text-yellow-400 flex">
                   {[...Array(5)].map((_, i) => (
@@ -334,8 +334,8 @@ function App() {
                     </svg>
                   ))}
                 </div>
-              </div>
-              <p className="text-gray-700 mb-6 italic">
+              </div> */}
+      {/* <p className="text-gray-700 mb-6 italic">
                 "Our email backlog used to take days to process. With Devros' AI
                 email agents, we now respond to 95% of inquiries within an hour.
                 The personalization capabilities are truly impressive."
@@ -347,10 +347,10 @@ function App() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-50">
+      <section id="contact" className="py-20 bg-devros-gray">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
