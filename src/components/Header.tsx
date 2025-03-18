@@ -24,7 +24,7 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-devros-orange shadow-md py-3"
+          ? "bg-devros-primary-blue shadow-md py-3"
           : "bg-devros-secondary-blue py-5"
       }`}
     >
@@ -85,7 +85,7 @@ const Header = () => {
             href="#contact"
             className={`hidden lg:inline-block px-5 py-2 rounded-lg font-medium transition duration-300 ${
               isScrolled
-                ? "bg-devros-primary-blue text-devros-white hover:bg-devros-secondary-blue"
+                ? "bg-devros-orange text-devros-white hover:bg-devros-secondary-blue"
                 : "bg-devros-orange text-devros-white hover:bg-devros-primary-blue"
             }`}
           >
