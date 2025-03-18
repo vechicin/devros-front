@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md py-3" : "bg-transparent py-5"
+        isScrolled ? "bg-white shadow-md py-3" : "bg-devros-orange py-5"
       }`}
     >
       <div className="container mx-auto px-6">
@@ -48,40 +48,40 @@ const Header = () => {
           <nav className="hidden lg:flex space-x-8">
             <a
               href="#about"
-              className={`font-medium hover:text-blue-500 transition duration-300 ${
-                isScrolled ? "text-gray-700" : "text-white"
+              className={`font-medium hover:text-devros-secondary-blue transition duration-300 ${
+                isScrolled ? "text-devros-gray-700" : "text-white"
               }`}
             >
               Acerca De
             </a>
             <a
               href="#services"
-              className={`font-medium hover:text-blue-500 transition duration-300 ${
-                isScrolled ? "text-gray-700" : "text-white"
+              className={`font-medium hover:text-devros-secondary-blue transition duration-300 ${
+                isScrolled ? "text-devros-gray-700" : "text-white"
               }`}
             >
               Servicios
             </a>
             <a
               href="#how-it-works"
-              className={`font-medium hover:text-blue-500 transition duration-300 ${
-                isScrolled ? "text-gray-700" : "text-white"
+              className={`font-medium hover:text-devros-secondary-blue transition duration-300 ${
+                isScrolled ? "text-devros-gray-700" : "text-white"
               }`}
             >
               Como Funciona
             </a>
             <a
               href="#testimonials"
-              className={`font-medium hover:text-blue-500 transition duration-300 ${
-                isScrolled ? "text-gray-700" : "text-white"
+              className={`font-medium hover:text-devros-secondary-blue transition duration-300 ${
+                isScrolled ? "text-devros-gray-700" : "text-white"
               }`}
             >
               Testimonios
             </a>
             <a
               href="#contact"
-              className={`font-medium hover:text-blue-500 transition duration-300 ${
-                isScrolled ? "text-gray-700" : "text-white"
+              className={`font-medium hover:text-devros-secondary-blue transition duration-300 ${
+                isScrolled ? "text-devros-gray-700" : "text-devros-white"
               }`}
             >
               Contacto
@@ -91,10 +91,10 @@ const Header = () => {
           {/* CTA Button */}
           <a
             href="#contact"
-            className={`hidden lg:inline-block px-5 py-2 rounded-lg font-medium transition duration-300 ${
+            className={`hidden lg:inline-block px-5 py-2 rounded-lg font-medium transition duration-300 text-devros-primary-blue hover:bg-devros-secondary-blue ${
               isScrolled
-                ? "bg-blue-600 text-white hover:bg-blue-700"
-                : "bg-white text-blue-900 hover:bg-blue-50"
+                ? "bg-devros-primary-blue text-devros-white hover:bg-devros-secondary-blue"
+                : "bg-devros-secondary-blue text-devros-white hover:bg-devros-primary-blue"
             }`}
           >
             Contáctanos
