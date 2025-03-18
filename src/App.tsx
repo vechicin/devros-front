@@ -77,7 +77,7 @@ function App() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-20 md:py-32">
+      <section className="relative bg-gradient-to-r from-devros-secondary-blue to-devros-primary-blue text-white py-20 md:py-32">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-10"></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl">
@@ -90,7 +90,7 @@ function App() {
             </p>
             <a
               href="#contact"
-              className="inline-flex items-center bg-white text-blue-900 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition duration-300"
+              className="inline-flex items-center bg-devros-white text-devros-secondary-blue font-semibold px-6 py-3 rounded-lg hover:bg-devros-primary-blue hover:text-devros-white transition duration-300"
             >
               Contáctanos
               <ArrowRight className="ml-2 h-5 w-5" />

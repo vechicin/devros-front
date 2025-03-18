@@ -37,7 +37,7 @@ const Header = () => {
             />
             <span
               className={`ml-2 text-xl font-bold ${
-                isScrolled ? "text-gray-900" : "text-white"
+                isScrolled ? "text-devros-gray-700" : "text-gray-900"
               }`}
             >
               Devros
@@ -49,7 +49,7 @@ const Header = () => {
             <a
               href="#about"
               className={`font-medium hover:text-devros-secondary-blue transition duration-300 ${
-                isScrolled ? "text-devros-gray-700" : "text-white"
+                isScrolled ? "text-devros-gray-700" : "text-gray-900"
               }`}
             >
               Acerca De
@@ -57,7 +57,7 @@ const Header = () => {
             <a
               href="#services"
               className={`font-medium hover:text-devros-secondary-blue transition duration-300 ${
-                isScrolled ? "text-devros-gray-700" : "text-white"
+                isScrolled ? "text-devros-gray-700" : "text-gray-900"
               }`}
             >
               Servicios
@@ -65,7 +65,7 @@ const Header = () => {
             <a
               href="#how-it-works"
               className={`font-medium hover:text-devros-secondary-blue transition duration-300 ${
-                isScrolled ? "text-devros-gray-700" : "text-white"
+                isScrolled ? "text-devros-gray-700" : "text-gray-900"
               }`}
             >
               Como Funciona
@@ -73,7 +73,7 @@ const Header = () => {
             <a
               href="#testimonials"
               className={`font-medium hover:text-devros-secondary-blue transition duration-300 ${
-                isScrolled ? "text-devros-gray-700" : "text-white"
+                isScrolled ? "text-devros-gray-700" : "text-gray-900"
               }`}
             >
               Testimonios
@@ -81,7 +81,7 @@ const Header = () => {
             <a
               href="#contact"
               className={`font-medium hover:text-devros-secondary-blue transition duration-300 ${
-                isScrolled ? "text-devros-gray-700" : "text-devros-white"
+                isScrolled ? "text-devros-gray-700" : "text-gray-900"
               }`}
             >
               Contacto
