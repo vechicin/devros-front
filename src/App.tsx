@@ -191,7 +191,7 @@ function App() {
           <div className="grid md:grid-cols-4 gap-8">
             {/* Step 1 */}
             <div className="text-center">
-              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+              <div className="bg-devros-secondary-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <Users className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">
@@ -205,7 +205,7 @@ function App() {
 
             {/* Step 2 */}
             <div className="text-center">
-              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+              <div className="bg-devros-primary-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <Workflow className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">
@@ -219,7 +219,7 @@ function App() {
 
             {/* Step 3 */}
             <div className="text-center">
-              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+              <div className="bg-devros-secondary-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <Bot className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">
@@ -233,7 +233,7 @@ function App() {
 
             {/* Step 4 */}
             <div className="text-center">
-              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+              <div className="bg-devros-primary-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <Zap className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">
