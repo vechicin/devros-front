@@ -4,11 +4,11 @@ export default {
     theme: {
         extend: {
             colors: {
-                'primary-blue': '#33ACFD',
-                'primary-white': '#0000',
-                'secondary-gray': '#A2AFB7',
-                'secondary-blue': '#002338',
-                'secondary-orange': '#FE9130'
+                'devros-primary-blue': '#33ACFD',
+                'devros-white': '#fff',
+                'devros-gray': '#A2AFB7',
+                'devros-secondary-blue': '#002338',
+                'devros-orange': '#FE9130'
             }
         },
     },
