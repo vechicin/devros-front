@@ -84,7 +84,7 @@ function App() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Implementamos soluciones de Inteligencia Artificial en tu negocio
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
+            <p className="text-xl md:text-2xl mb-8 text-devros-white">
               Automatización de procesos, chatbots, consultoría en IA,
               entrenamiento en IA para tu empresa.
             </p>
