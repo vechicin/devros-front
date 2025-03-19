@@ -178,7 +178,7 @@ const Quiz: React.FC = () => {
   return (
     <div className="container mx-auto px-6 py-20">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl font-bold text-devros-gray mb-8">
+        <h2 className="text-3xl font-bold text-center text-devros-gray mb-8">
           Cuestionario de Evaluación
         </h2>
         <div className="bg-devros-white p-8 rounded-lg shadow-lg">
@@ -211,7 +211,7 @@ const Quiz: React.FC = () => {
             {step > 0 && (
               <button
                 onClick={handlePreviousStep}
-                className="px-6 py-3 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400 transition duration-300"
+                className="px-6 py-3 bg-devros-orange text-devros-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
               >
                 Anterior
               </button>

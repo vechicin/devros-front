@@ -17,6 +17,7 @@ import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
 import "swiper/swiper-bundle.css";
 import CardCarousel from "./components/CardCarousel";
+import Quiz from "./components/Quiz";
 
 function App() {
   const cardData = [
@@ -313,6 +314,10 @@ function App() {
           </div>
         </div>
       </section> */}
+      {/* Quiz Section */}
+      <section id="quiz" className="py-10 bg-gray-100">
+        <Quiz />
+      </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-devros-gray-100">
