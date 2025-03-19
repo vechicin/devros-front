@@ -23,7 +23,9 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md py-3" : "bg-transparent py-5"
+        isScrolled
+          ? "bg-devros-primary-blue shadow-md py-3"
+          : "bg-devros-secondary-blue py-5"
       }`}
     >
       <div className="container mx-auto px-6">
@@ -32,14 +34,10 @@ const Header = () => {
           <a href="#" className="flex items-center">
             <Bot
               className={`h-8 w-8 ${
-                isScrolled ? "text-blue-600" : "text-white"
+                isScrolled ? "text-devros-secondary-blue" : "text-devros-white"
               }`}
             />
-            <span
-              className={`ml-2 text-xl font-bold ${
-                isScrolled ? "text-gray-900" : "text-white"
-              }`}
-            >
+            <span className={`ml-2 text-xl font-bold text-devros-white`}>
               Devros
             </span>
           </a>
@@ -48,40 +46,50 @@ const Header = () => {
           <nav className="hidden lg:flex space-x-8">
             <a
               href="#about"
-              className={`font-medium hover:text-blue-500 transition duration-300 ${
-                isScrolled ? "text-gray-700" : "text-white"
+              className={`font-medium text-devros-white ${
+                isScrolled
+                  ? "hover:text-devros-secondary-blue transition duration-300"
+                  : "hover:text-devros-primary-blue transition duration-300 "
               }`}
             >
               Acerca De
             </a>
             <a
               href="#services"
-              className={`font-medium hover:text-blue-500 transition duration-300 ${
-                isScrolled ? "text-gray-700" : "text-white"
+              className={`font-medium text-devros-white ${
+                isScrolled
+                  ? "hover:text-devros-secondary-blue transition duration-300"
+                  : "hover:text-devros-primary-blue transition duration-300 "
               }`}
             >
               Servicios
             </a>
             <a
               href="#how-it-works"
-              className={`font-medium hover:text-blue-500 transition duration-300 ${
-                isScrolled ? "text-gray-700" : "text-white"
+              className={`font-medium text-devros-white ${
+                isScrolled
+                  ? "hover:text-devros-secondary-blue transition duration-300"
+                  : "hover:text-devros-primary-blue transition duration-300 "
               }`}
             >
               Como Funciona
             </a>
             <a
               href="#testimonials"
-              className={`font-medium hover:text-blue-500 transition duration-300 ${
-                isScrolled ? "text-gray-700" : "text-white"
+              className={`font-medium text-devros-white ${
+                isScrolled
+                  ? "hover:text-devros-secondary-blue transition duration-300"
+                  : "hover:text-devros-primary-blue transition duration-300 "
               }`}
             >
               Testimonios
             </a>
             <a
               href="#contact"
-              className={`font-medium hover:text-blue-500 transition duration-300 ${
-                isScrolled ? "text-gray-700" : "text-white"
+              className={`font-medium text-devros-white ${
+                isScrolled
+                  ? "hover:text-devros-secondary-blue transition duration-300"
+                  : "hover:text-devros-primary-blue transition duration-300 "
               }`}
             >
               Contacto
@@ -93,8 +101,8 @@ const Header = () => {
             href="#contact"
             className={`hidden lg:inline-block px-5 py-2 rounded-lg font-medium transition duration-300 ${
               isScrolled
-                ? "bg-blue-600 text-white hover:bg-blue-700"
-                : "bg-white text-blue-900 hover:bg-blue-50"
+                ? "bg-devros-orange text-devros-white hover:bg-devros-secondary-blue"
+                : "bg-devros-orange text-devros-white hover:bg-devros-primary-blue"
             }`}
           >
             Contáctanos

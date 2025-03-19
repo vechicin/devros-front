@@ -4,41 +4,41 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-devros-secondary-blue text-devros-white py-12">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-1">
             <div className="flex items-center mb-4">
-              <Bot className="h-8 w-8 text-blue-400" />
+              <Bot className="h-8 w-8 text-devros-primary-blue" />
               <span className="ml-2 text-xl font-bold">Devros</span>
             </div>
-            <p className="text-gray-400 mb-6">
+            <p className="text-devros-gray mb-6">
               Transformando la atención al cliente con soluciones impulsadas por
               IA.
             </p>
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition duration-300"
+                className="text-devros-gray hover:text-devros-white transition duration-300"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition duration-300"
+                className="text-devros-gray hover:text-devros-white transition duration-300"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition duration-300"
+                className="text-devros-gray hover:text-devros-white transition duration-300"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition duration-300"
+                className="text-devros-gray hover:text-devros-white transition duration-300"
               >
                 <Instagram className="h-5 w-5" />
               </a>
@@ -52,7 +52,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#about"
-                  className="text-gray-400 hover:text-white transition duration-300"
+                  className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
                   Acerca De
                 </a>
@@ -60,7 +60,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#services"
-                  className="text-gray-400 hover:text-white transition duration-300"
+                  className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
                   Servicios
                 </a>
@@ -68,7 +68,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#how-it-works"
-                  className="text-gray-400 hover:text-white transition duration-300"
+                  className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
                   Como Funciona
                 </a>
@@ -76,7 +76,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#testimonials"
-                  className="text-gray-400 hover:text-white transition duration-300"
+                  className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
                   Testimonios
                 </a>
@@ -84,7 +84,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#contact"
-                  className="text-gray-400 hover:text-white transition duration-300"
+                  className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
                   Contacto
                 </a>
@@ -99,7 +99,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#services"
-                  className="text-gray-400 hover:text-white transition duration-300"
+                  className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
                   Automatización de Procesos
                 </a>
@@ -107,7 +107,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#services"
-                  className="text-gray-400 hover:text-white transition duration-300"
+                  className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
                   Agente IA/Chatbot - Servicio al Cliente
                 </a>
@@ -115,7 +115,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#services"
-                  className="text-gray-400 hover:text-white transition duration-300"
+                  className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
                   Agente IA/Chatbot - Ventas y CRM
                 </a>
@@ -123,7 +123,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#services"
-                  className="text-gray-400 hover:text-white transition duration-300"
+                  className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
                   Agente IA/Chatbot - Gestión de Compras y Logística
                 </a>
@@ -131,7 +131,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#services"
-                  className="text-gray-400 hover:text-white transition duration-300"
+                  className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
                   Agente IA/Chatbot - Marketing
                 </a>
@@ -139,7 +139,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#services"
-                  className="text-gray-400 hover:text-white transition duration-300"
+                  className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
                   Agente IA/Chatbot - Asistente Virtual
                 </a>
@@ -147,7 +147,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#services"
-                  className="text-gray-400 hover:text-white transition duration-300"
+                  className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
                   Agente IA/Chatbot - Asistente Legal
                 </a>
@@ -155,7 +155,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#services"
-                  className="text-gray-400 hover:text-white transition duration-300"
+                  className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
                   Consultoría en IA
                 </a>
@@ -163,7 +163,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#services"
-                  className="text-gray-400 hover:text-white transition duration-300"
+                  className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
                   Entrenamiento IA
                 </a>
@@ -171,7 +171,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#services"
-                  className="text-gray-400 hover:text-white transition duration-300"
+                  className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
                   Creación de Dashboards Inteligentes
                 </a>
@@ -183,20 +183,20 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contacto</h3>
             <ul className="space-y-2">
-              <li className="text-gray-400">
+              <li className="text-devros-gray">
                 <span className="block">Email:</span>
                 <a
                   href="mailto:info@devros.ai"
-                  className="text-blue-400 hover:text-blue-300 transition duration-300"
+                  className="text-devros-primary-blue hover:text-blue-300 transition duration-300"
                 >
                   info@devros.ai
                 </a>
               </li>
-              <li className="text-gray-400">
+              <li className="text-devros-gray">
                 <span className="block">Teléfono:</span>
                 <a
                   href="tel:+1234567890"
-                  className="text-blue-400 hover:text-blue-300 transition duration-300"
+                  className="text-devros-primary-blue hover:text-blue-300 transition duration-300"
                 >
                   +1 (234) 567-890
                 </a>
@@ -207,25 +207,25 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
+            <p className="text-devros-gray text-sm">
               &copy; {currentYear} Devros. Todos los derechos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a
                 href="#"
-                className="text-gray-400 hover:text-white text-sm transition duration-300"
+                className="text-devros-gray hover:text-devros-white text-sm transition duration-300"
               >
                 Política de Privacidad
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white text-sm transition duration-300"
+                className="text-devros-gray hover:text-devros-white text-sm transition duration-300"
               >
                 Condiciones de Servicio
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white text-sm transition duration-300"
+                className="text-devros-gray hover:text-devros-white text-sm transition duration-300"
               >
                 Política de Cookies
               </a>

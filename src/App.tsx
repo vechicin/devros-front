@@ -77,20 +77,20 @@ function App() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-20 md:py-32">
+      <section className="relative bg-gradient-to-r from-devros-secondary-blue to-devros-primary-blue text-white py-20 md:py-32">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-10"></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Implementamos soluciones de Inteligencia Artificial en tu negocio
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
+            <p className="text-xl md:text-2xl mb-8 text-devros-white">
               Automatización de procesos, chatbots, consultoría en IA,
               entrenamiento en IA para tu empresa.
             </p>
             <a
               href="#contact"
-              className="inline-flex items-center bg-white text-blue-900 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition duration-300"
+              className="inline-flex items-center bg-devros-orange text-devros-white font-semibold px-6 py-3 rounded-lg hover:bg-devros-primary-blue hover:text-devros-white transition duration-300"
             >
               Contáctanos
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -190,56 +190,50 @@ function App() {
 
           <div className="grid md:grid-cols-4 gap-8">
             {/* Step 1 */}
-            <div className="text-center">
-              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+            <div className="text-center group relative">
+              <div className="bg-devros-secondary-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <Users className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
-                1. Entender
-              </h3>
-              <p className="text-gray-700">
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Entender</h3>
+              <p className="text-gray-700 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
                 Analizamos tus sistemas de soporte actuales y entendemos tus
                 requisitos comerciales específicos.
               </p>
             </div>
 
             {/* Step 2 */}
-            <div className="text-center">
-              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+            <div className="text-center group relative">
+              <div className="bg-devros-primary-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <Workflow className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
-                2. Diseñar
-              </h3>
-              <p className="text-gray-700">
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Diseñar</h3>
+              <p className="text-gray-700 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
                 Creamos flujos de trabajo personalizados y flujos de
                 conversación adaptados a la experiencia de tus clientes.
               </p>
             </div>
 
             {/* Step 3 */}
-            <div className="text-center">
-              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+            <div className="text-center group relative">
+              <div className="bg-devros-secondary-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <Bot className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">
-                3. Desarrollar
+                Desarrollar
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
                 Creamos e integramos soluciones de IA que se conectan sin
                 problemas con tus sistemas existentes.
               </p>
             </div>
 
             {/* Step 4 */}
-            <div className="text-center">
-              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+            <div className="text-center group relative">
+              <div className="bg-devros-primary-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <Zap className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
-                4. Soporte
-              </h3>
-              <p className="text-gray-700">
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Soporte</h3>
+              <p className="text-gray-700 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
                 Brindamos soporte, actualizaciones y mejoras continuas para
                 garantizar un rendimiento óptimo.
               </p>
@@ -249,7 +243,7 @@ function App() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-20">
+      {/* <section id="testimonials" className="py-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
@@ -259,11 +253,11 @@ function App() {
               Discover how our AI agents have transformed customer support for
               businesses like yours.
             </p>
-          </div>
+          </div> */}
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Testimonial 1 */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
+      {/* <div className="grid md:grid-cols-3 gap-8"> */}
+      {/* Testimonial 1 */}
+      {/* <div className="bg-white rounded-lg shadow-lg p-8">
               <div className="flex items-center mb-4">
                 <div className="text-yellow-400 flex">
                   {[...Array(5)].map((_, i) => (
@@ -289,10 +283,10 @@ function App() {
                   Customer Support Director, TechSolutions Inc.
                 </p>
               </div>
-            </div>
+            </div> */}
 
-            {/* Testimonial 2 */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
+      {/* Testimonial 2 */}
+      {/* <div className="bg-white rounded-lg shadow-lg p-8">
               <div className="flex items-center mb-4">
                 <div className="text-yellow-400 flex">
                   {[...Array(5)].map((_, i) => (
@@ -318,10 +312,10 @@ function App() {
                   Operations Manager, Global Retail
                 </p>
               </div>
-            </div>
+            </div> */}
 
-            {/* Testimonial 3 */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
+      {/* Testimonial 3 */}
+      {/* <div className="bg-white rounded-lg shadow-lg p-8">
               <div className="flex items-center mb-4">
                 <div className="text-yellow-400 flex">
                   {[...Array(5)].map((_, i) => (
@@ -334,8 +328,8 @@ function App() {
                     </svg>
                   ))}
                 </div>
-              </div>
-              <p className="text-gray-700 mb-6 italic">
+              </div> */}
+      {/* <p className="text-gray-700 mb-6 italic">
                 "Our email backlog used to take days to process. With Devros' AI
                 email agents, we now respond to 95% of inquiries within an hour.
                 The personalization capabilities are truly impressive."
@@ -347,10 +341,10 @@ function App() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-50">
+      <section id="contact" className="py-20 bg-devros-gray-100">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
