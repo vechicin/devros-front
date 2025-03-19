@@ -13,7 +13,9 @@ export default {
                 'devros-gray-600': '#7C8894',
                 'devros-gray-700': '#5E6B77',
                 'devros-secondary-blue': '#002338',
-                'devros-orange': '#FE9130'
+                'devros-secondary-blue-lighter': '#1A3B4D',
+                'devros-orange': '#FE9130',
+                'devros-orange-100': '#FFB44D'
             }
         },
     },

@@ -178,10 +178,10 @@ const Quiz: React.FC = () => {
   return (
     <div className="container mx-auto px-6 py-20">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-devros-gray mb-8">
-          Cuestionario de Evaluación
+        <h2 className="text-3xl font-bold text-center text-devros-secondary-blue mb-8">
+          Descubre como la IA puede ayudar a tu negocio
         </h2>
-        <div className="bg-devros-white p-8 rounded-lg shadow-lg">
+        <div className="bg-devros-white p-8 rounded-lg shadow-lg text-center">
           <h3 className="text-xl font-semibold text-devros-gray mb-4">
             {quizData[step].question}
           </h3>

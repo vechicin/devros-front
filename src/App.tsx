@@ -315,7 +315,10 @@ function App() {
         </div>
       </section> */}
       {/* Quiz Section */}
-      <section id="quiz" className="py-10 bg-gray-100">
+      <section
+        id="quiz"
+        className="py-10 bg-gradient-to-r from-devros-orange to-devros-orange-100"
+      >
         <Quiz />
       </section>
 
