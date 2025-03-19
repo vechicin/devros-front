@@ -34,14 +34,10 @@ const Header = () => {
           <a href="#" className="flex items-center">
             <Bot
               className={`h-8 w-8 ${
-                isScrolled ? "text-blue-600" : "text-white"
+                isScrolled ? "text-devros-secondary-blue" : "text-devros-white"
               }`}
             />
-            <span
-              className={`ml-2 text-xl font-bold ${
-                isScrolled ? "text-devros-white" : "text-devros-white"
-              }`}
-            >
+            <span className={`ml-2 text-xl font-bold text-devros-white`}>
               Devros
             </span>
           </a>
@@ -50,31 +46,51 @@ const Header = () => {
           <nav className="hidden lg:flex space-x-8">
             <a
               href="#about"
-              className={`font-medium hover:text-devros-secondary-blue transition duration-300 text-devros-white`}
+              className={`font-medium text-devros-white ${
+                isScrolled
+                  ? "hover:text-devros-secondary-blue transition duration-300"
+                  : "hover:text-devros-primary-blue transition duration-300 "
+              }`}
             >
               Acerca De
             </a>
             <a
               href="#services"
-              className={`font-medium hover:text-devros-secondary-blue transition duration-300 text-devros-white`}
+              className={`font-medium text-devros-white ${
+                isScrolled
+                  ? "hover:text-devros-secondary-blue transition duration-300"
+                  : "hover:text-devros-primary-blue transition duration-300 "
+              }`}
             >
               Servicios
             </a>
             <a
               href="#how-it-works"
-              className={`font-medium hover:text-devros-secondary-blue transition duration-300 text-devros-white`}
+              className={`font-medium text-devros-white ${
+                isScrolled
+                  ? "hover:text-devros-secondary-blue transition duration-300"
+                  : "hover:text-devros-primary-blue transition duration-300 "
+              }`}
             >
               Como Funciona
             </a>
             <a
               href="#testimonials"
-              className={`font-medium hover:text-devros-secondary-blue transition duration-300 text-devros-white`}
+              className={`font-medium text-devros-white ${
+                isScrolled
+                  ? "hover:text-devros-secondary-blue transition duration-300"
+                  : "hover:text-devros-primary-blue transition duration-300 "
+              }`}
             >
               Testimonios
             </a>
             <a
               href="#contact"
-              className={`font-medium hover:text-devros-secondary-blue transition duration-300 text-devros-white`}
+              className={`font-medium text-devros-white ${
+                isScrolled
+                  ? "hover:text-devros-secondary-blue transition duration-300"
+                  : "hover:text-devros-primary-blue transition duration-300 "
+              }`}
             >
               Contacto
             </a>
