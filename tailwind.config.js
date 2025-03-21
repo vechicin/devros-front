@@ -16,7 +16,11 @@ export default {
                 'devros-secondary-blue-lighter': '#1A3B4D',
                 'devros-orange': '#FE9130',
                 'devros-orange-100': '#FFB44D'
-            }
+            },
+            fontFamily: {
+                gotham: ['Gotham Black', 'sans-serif'],
+                raleway: ['Raleway', 'sans-serif']
+            },
         },
     },
     plugins: [],

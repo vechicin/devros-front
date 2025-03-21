@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Gotham Black';
+    src: url('/src/assets/Gotham-Black.otf') format('opentype');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Gotham Black', sans-serif;
+}
+
+body,
+p,
+span,
+div,
+ul,
+li {
+    font-family: 'Raleway', sans-serif;
+}
