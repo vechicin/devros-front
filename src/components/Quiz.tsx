@@ -183,26 +183,31 @@ const Quiz: React.FC = () => {
 
   const handleSubmitQuiz = async () => {
     try {
-      const payload = {
-        full_name: name,
-        email: email,
-        company: company,
-        company_size: answers["question0"],
-        company_industry: answers["question1"],
-        lead_position: answers["question2"],
-        biggest_challenge: answers["question3"],
-        tech_level: answers["question4"],
-        repetitive_tasks: answers["question5"],
-        ai_use: answers["question6"],
-        ai_expertise: answers["question7"],
+      const leadData = {
+        lead: {
+          full_name: name,
+          email: email,
+          company: company,
+          inquiry_type: "",
+          message: "",
+          company_size: answers["question0"],
+          company_industry: answers["question1"],
+          lead_position: answers["question2"],
+          biggest_challenge: answers["question3"],
+          tech_level: answers["question4"],
+          repetitive_tasks: answers["question5"],
+          ai_use: answers["question6"],
+          ai_expertise: answers["question7"],
+        },
       };
+      console.log(leadData);
 
       const response = await fetch("http://localhost:3000/leads", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
         },
-        body: JSON.stringify({ payload }),
+        body: JSON.stringify({ ...leadData }),
       });
 
       if (!response.ok) {
@@ -220,8 +225,6 @@ const Quiz: React.FC = () => {
       );
     }
   };
-
-  console.log(answers);
 
   return (
     <div className="container mx-auto px-6 py-20">
