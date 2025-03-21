@@ -166,12 +166,40 @@ const Quiz: React.FC = () => {
   const handleNextStep = () => {
     if (step < quizData.length - 1) {
       setStep(step + 1);
+    } else {
+      handleSubmitQuiz();
     }
   };
 
   const handlePreviousStep = () => {
     if (step > 0) {
       setStep(step - 1);
+    }
+  };
+
+  const handleSubmitQuiz = async () => {
+    try {
+      const response = await fetch("http://localhost:3000/leads", {
+        method: "POST",
+        headers: {
+          "Content-type": "applications/json",
+        },
+        body: JSON.stringify(answers),
+      });
+
+      if (!response.ok) {
+        throw new Error(
+          "Tuvimos problemas para enviar tus respuestas. Intenta nuevamente."
+        );
+      }
+
+      const result = await response.json();
+      console.log("¡Tus respuestas se han enviado con éxito!", result);
+    } catch (error) {
+      console.error(
+        "Tuvimos problemas para enviar tus respuestas. Intenta nuevamente.",
+        error
+      );
     }
   };
 
