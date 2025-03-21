@@ -155,6 +155,10 @@ const quizData: Question[] = [
 const Quiz: React.FC = () => {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [step, setStep] = useState<number>(0);
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [company, setCompany] = useState<string>("");
+  const [isQuizCompleted, setIsQuizCompleted] = useState<boolean>(false);
 
   const handleAnswerChange = (questionIndex: number, answerValue: string) => {
     setAnswers((prevAnswers) => ({
@@ -167,7 +171,7 @@ const Quiz: React.FC = () => {
     if (step < quizData.length - 1) {
       setStep(step + 1);
     } else {
-      handleSubmitQuiz();
+      setIsQuizCompleted(true); // Mark quiz as completed
     }
   };
 
@@ -182,9 +186,14 @@ const Quiz: React.FC = () => {
       const response = await fetch("http://localhost:3000/leads", {
         method: "POST",
         headers: {
-          "Content-type": "applications/json",
+          "Content-type": "application/json",
         },
-        body: JSON.stringify(answers),
+        body: JSON.stringify({
+          name,
+          email,
+          company,
+          answers,
+        }),
       });
 
       if (!response.ok) {
@@ -210,47 +219,111 @@ const Quiz: React.FC = () => {
           Descubre como la IA puede ayudar a tu negocio
         </h2>
         <div className="bg-devros-white p-8 rounded-lg shadow-lg text-center">
-          <h3 className="text-xl font-semibold text-devros-gray mb-4">
-            {quizData[step].question}
-          </h3>
-          <div className="space-y-4">
-            {quizData[step].options.map((option) => (
-              <div key={option.value} className="flex items-center">
-                <input
-                  type="radio"
-                  id={option.value}
-                  name={`question${step}`}
-                  value={option.value}
-                  checked={answers[`question${step}`] === option.value}
-                  onChange={() => handleAnswerChange(step, option.value)}
-                  className="h-5 w-5 text-devros-primary-blue"
-                />
-                <label
-                  htmlFor={option.value}
-                  className="ml-3 text-lg text-devros-gray"
-                >
-                  {option.label}
-                </label>
+          {!isQuizCompleted ? (
+            <div>
+              <h3 className="text-xl font-semibold text-devros-gray mb-4">
+                {quizData[step].question}
+              </h3>
+              <div className="space-y-4">
+                {quizData[step].options.map((option) => (
+                  <div key={option.value} className="flex items-center">
+                    <input
+                      type="radio"
+                      id={option.value}
+                      name={`question${step}`}
+                      value={option.value}
+                      checked={answers[`question${step}`] === option.value}
+                      onChange={() => handleAnswerChange(step, option.value)}
+                      className="h-5 w-5 text-devros-primary-blue"
+                    />
+                    <label
+                      htmlFor={option.value}
+                      className="ml-3 text-lg text-devros-gray"
+                    >
+                      {option.label}
+                    </label>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
 
-          <div className="flex justify-between mt-8">
-            {step > 0 && (
-              <button
-                onClick={handlePreviousStep}
-                className="px-6 py-3 bg-devros-orange text-devros-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
-              >
-                Anterior
-              </button>
-            )}
-            <button
-              onClick={handleNextStep}
-              className="px-6 py-3 bg-devros-primary-blue text-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
-            >
-              {step === quizData.length - 1 ? "Finalizar" : "Siguiente"}
-            </button>
-          </div>
+              <div className="flex justify-between mt-8">
+                {step > 0 && (
+                  <button
+                    onClick={handlePreviousStep}
+                    className="px-6 py-3 bg-devros-orange text-devros-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
+                  >
+                    Anterior
+                  </button>
+                )}
+                <button
+                  onClick={handleNextStep}
+                  className="px-6 py-3 bg-devros-primary-blue text-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
+                >
+                  {step === quizData.length - 1 ? "Finalizar" : "Siguiente"}
+                </button>
+              </div>
+            </div>
+          ) : (
+            <div>
+              <h3 className="text-xl font-semibold text-devros-gray mb-4">
+                ¡Ya casi terminas! Por favor llena tus datos para enviar tus
+                respuestas.
+              </h3>
+              <div className="space-y-4">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="block text-lg text-devros-gray mb-2"
+                  >
+                    Nombre
+                  </label>
+                  <input
+                    id="name"
+                    type="text"
+                    className="w-full px-4 py-2 border border-devros-gray rounded"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block text-lg text-devros-gray mb-2"
+                  >
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    type="email"
+                    className="w-full px-4 py-2 border border-devros-gray rounded"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="company"
+                    className="block text-lg text-devros-gray mb-2"
+                  >
+                    Nombre de la empresa
+                  </label>
+                  <input
+                    id="company"
+                    type="text"
+                    className="w-full px-4 py-2 border border-devros-gray rounded"
+                    value={company}
+                    onChange={(e) => setCompany(e.target.value)}
+                  />
+                </div>
+                <button
+                  onClick={handleSubmitQuiz}
+                  className="mt-4 px-6 py-3 bg-devros-primary-blue text-devros-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
+                >
+                  Enviar Respuestas
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
