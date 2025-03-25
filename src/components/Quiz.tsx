@@ -338,24 +338,17 @@ const Quiz: React.FC = () => {
                   </h3>
                   <div className="space-y-4">
                     {quizData[step].options.map((option) => (
-                      <div key={option.value} className="flex items-center">
-                        <input
-                          type="radio"
-                          id={option.value}
-                          name={`question${step}`}
-                          value={option.value}
-                          checked={answers[`question${step}`] === option.value}
-                          onChange={() =>
-                            handleAnswerChange(step, option.value)
-                          }
-                          className="h-5 w-5 text-devros-primary-blue"
-                        />
-                        <label
-                          htmlFor={option.value}
-                          className="ml-3 text-lg text-devros-gray"
+                      <div key={option.value} className="flex justify-center">
+                        <button
+                          onClick={() => handleAnswerChange(step, option.value)}
+                          className={`w-full px-6 py-3 text-lg rounded-lg ${
+                            answers[`question${step}`] === option.value
+                              ? "bg-devros-primary-blue text-white"
+                              : "bg-devros-primary-blue text-devros-white border border-devros-primary-blue"
+                          } hover:bg-devros-secondary-blue transition duration-300`}
                         >
                           {option.label}
-                        </label>
+                        </button>
                       </div>
                     ))}
                   </div>
