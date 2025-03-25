@@ -232,6 +232,7 @@ const Quiz: React.FC = () => {
   const [responseMessage, setResponseMessage] =
     useState<ResponseMessage | null>(null);
   const [isQuizStarted, setIsQuizStarted] = useState<boolean>(false);
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   const handleAnswerChange = (questionIndex: number, answerValue: string) => {
     setAnswers((prevAnswers) => ({
@@ -255,6 +256,8 @@ const Quiz: React.FC = () => {
   };
 
   const handleSubmitQuiz = async () => {
+    setIsSubmitting(true);
+
     try {
       const leadData = {
         lead: {
@@ -299,6 +302,8 @@ const Quiz: React.FC = () => {
         "Tuvimos problemas para enviar tus respuestas. Intenta nuevamente.",
         error
       );
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -310,14 +315,14 @@ const Quiz: React.FC = () => {
             Descubre como la IA puede ayudar a tu negocio
           </h2>
           <div className="bg-devros-white p-8 rounded-lg shadow-lg text-center">
-            {!isQuizStarted ? ( // Show the introductory slide if quiz hasn't started
+            {!isQuizStarted ? (
               <div>
                 <h3 className="text-xl font-semibold text-devros-gray mb-4">
                   ¿Quieres saber como la IA puede impulsar tu empresa? Responde
                   este quiz para averiguarlo!
                 </h3>
                 <button
-                  onClick={() => setIsQuizStarted(true)} // Start the quiz
+                  onClick={() => setIsQuizStarted(true)}
                   className="px-6 py-3 bg-devros-primary-blue text-devros-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
                 >
                   Empezar
@@ -425,8 +430,32 @@ const Quiz: React.FC = () => {
                     <button
                       onClick={handleSubmitQuiz}
                       className="mt-4 px-6 py-3 bg-devros-primary-blue text-devros-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
+                      disabled={isSubmitting}
                     >
-                      Enviar Respuestas
+                      {isSubmitting ? (
+                        <svg
+                          className="mr-3 h-5 w-5 animate-spin text-white"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <circle
+                            className="opacity-25"
+                            cx="12"
+                            cy="12"
+                            r="10"
+                            stroke="currentColor"
+                            stroke-width="4"
+                          ></circle>
+                          <path
+                            className="opacity-75"
+                            fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                          ></path>
+                        </svg>
+                      ) : (
+                        "Enviar Respuestas"
+                      )}
                     </button>
                   </div>
                 </div>
