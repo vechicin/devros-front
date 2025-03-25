@@ -17,6 +17,7 @@ import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
 import "swiper/swiper-bundle.css";
 import CardCarousel from "./components/CardCarousel";
+import Quiz from "./components/Quiz";
 
 function App() {
   const cardData = [
@@ -142,35 +143,6 @@ function App() {
           </div>
 
           <CardCarousel cardArray={cardData} />
-          {/* <SwiperSlide>
-              <div className="bg-white rounded-lg shadow-lg p-8 transition-all duration-300 hover:shadow-xl">
-                <div className="bg-blue-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                  <MessageSquare className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-bold mb-4 text-gray-900">
-                  Automatización de Procesos
-                </h3>
-                <p className="text-gray-700 mb-4">
-                  Optimizamos tus operaciones mediante automatización
-                  inteligente de procesos, reduciendo tiempos, costos y errores.
-                  Mejora la eficiencia de tu negocio con soluciones IA a medida.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-center text-gray-700">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                    <span>24/7 customer support</span>
-                  </li>
-                  <li className="flex items-center text-gray-700">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Multilingual capabilities</span>
-                  </li>
-                  <li className="flex items-center text-gray-700">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Seamless handoff to human agents</span>
-                  </li>
-                </ul>
-              </div>
-            </SwiperSlide> */}
         </div>
       </section>
 
@@ -342,6 +314,13 @@ function App() {
           </div>
         </div>
       </section> */}
+      {/* Quiz Section */}
+      <section
+        id="quiz"
+        className="py-10 bg-gradient-to-r from-devros-orange to-devros-orange-100"
+      >
+        <Quiz />
+      </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-devros-gray-100">

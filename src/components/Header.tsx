@@ -75,14 +75,14 @@ const Header = () => {
               Como Funciona
             </a>
             <a
-              href="#testimonials"
+              href="#quiz"
               className={`font-medium text-devros-white ${
                 isScrolled
                   ? "hover:text-devros-secondary-blue transition duration-300"
                   : "hover:text-devros-primary-blue transition duration-300 "
               }`}
             >
-              Testimonios
+              Quiz
             </a>
             <a
               href="#contact"
@@ -157,11 +157,11 @@ const Header = () => {
                 Como Funciona
               </a>
               <a
-                href="#testimonials"
+                href="#quiz"
                 className="font-medium text-gray-700 hover:text-blue-500 transition duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Testimonios
+                Quiz
               </a>
               <a
                 href="#contact"
