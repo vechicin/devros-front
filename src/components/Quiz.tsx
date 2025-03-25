@@ -231,6 +231,7 @@ const Quiz: React.FC = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState<boolean>(false);
   const [responseMessage, setResponseMessage] =
     useState<ResponseMessage | null>(null);
+  const [isQuizStarted, setIsQuizStarted] = useState<boolean>(false);
 
   const handleAnswerChange = (questionIndex: number, answerValue: string) => {
     setAnswers((prevAnswers) => ({
@@ -309,7 +310,20 @@ const Quiz: React.FC = () => {
             Descubre como la IA puede ayudar a tu negocio
           </h2>
           <div className="bg-devros-white p-8 rounded-lg shadow-lg text-center">
-            {!isFormSubmitted ? (
+            {!isQuizStarted ? ( // Show the introductory slide if quiz hasn't started
+              <div>
+                <h3 className="text-xl font-semibold text-devros-gray mb-4">
+                  ¿Quieres saber como la IA puede impulsar tu empresa? Responde
+                  este quiz para averiguarlo!
+                </h3>
+                <button
+                  onClick={() => setIsQuizStarted(true)} // Start the quiz
+                  className="px-6 py-3 bg-devros-primary-blue text-devros-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
+                >
+                  Empezar
+                </button>
+              </div>
+            ) : !isFormSubmitted ? (
               !isQuizCompleted ? (
                 <div>
                   <h3 className="text-xl font-semibold text-devros-gray mb-4">
@@ -422,8 +436,11 @@ const Quiz: React.FC = () => {
                 {responseMessage && (
                   <div>
                     <p>{responseMessage.message}</p>
+                    <br />
                     <p>{responseMessage.solution}</p>
+                    <br />
                     <p>{responseMessage.nextStep}</p>
+                    <br />
                   </div>
                 )}
               </div>
