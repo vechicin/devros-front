@@ -318,8 +318,10 @@ const Quiz: React.FC = () => {
             {!isQuizStarted ? (
               <div>
                 <h3 className="text-xl font-semibold text-devros-gray mb-4">
-                  ¿Quieres saber como la IA puede impulsar tu empresa? Responde
-                  este quiz para averiguarlo!
+                  ¿Quieres saber como la IA puede impulsar tu empresa?
+                </h3>
+                <h3 className="text-xl font-semibold text-devros-gray mb-4">
+                  ¡Responde este quiz para averiguarlo!
                 </h3>
                 <button
                   onClick={() => setIsQuizStarted(true)}
