@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 type AnswerOption = {
   value: string;
@@ -307,143 +308,178 @@ const Quiz: React.FC = () => {
             Descubre como la IA puede ayudar a tu negocio
           </h2>
           <div className="bg-devros-white p-8 rounded-lg shadow-lg text-center">
-            {!isQuizStarted ? (
-              <div>
-                <h3 className="text-xl font-semibold text-devros-gray mb-4">
-                  ¿Quieres saber como la IA puede impulsar tu empresa?
-                </h3>
-                <h3 className="text-xl font-semibold text-devros-gray mb-4">
-                  ¡Responde este quiz para averiguarlo!
-                </h3>
-                <button
-                  onClick={() => setIsQuizStarted(true)}
-                  className="px-6 py-3 bg-devros-primary-blue text-devros-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
+            <TransitionGroup>
+              {!isQuizStarted ? (
+                <CSSTransition
+                  key="startQuiz"
+                  timeout={500}
+                  classNames="fade"
+                  unmountOnExit
                 >
-                  Empezar
-                </button>
-              </div>
-            ) : !isFormSubmitted ? (
-              !isQuizCompleted ? (
-                <div>
-                  <h3 className="text-xl font-semibold text-devros-gray mb-4">
-                    {quizData[step].question}
-                  </h3>
-                  <div className="space-y-4">
-                    {quizData[step].options.map((option) => (
-                      <div key={option.value} className="flex justify-center">
-                        <button
-                          onClick={() => handleAnswerChange(step, option.value)}
-                          className={`w-full px-6 py-3 text-lg rounded-lg ${
-                            answers[`question${step}`] === option.value
-                              ? "bg-devros-primary-blue text-white"
-                              : "bg-devros-primary-blue text-devros-white border border-devros-primary-blue"
-                          } hover:bg-devros-secondary-blue transition duration-300`}
-                        >
-                          {option.label}
-                        </button>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ) : (
-                <div>
-                  <h3 className="text-xl font-semibold text-devros-gray mb-4">
-                    ¡Ya casi terminas! Por favor llena tus datos para enviar tus
-                    respuestas.
-                  </h3>
-                  <div className="space-y-4">
-                    <div>
-                      <label
-                        htmlFor="name"
-                        className="block text-lg text-devros-gray mb-2"
-                      >
-                        Nombre
-                      </label>
-                      <input
-                        id="name"
-                        type="text"
-                        className="w-full px-4 py-2 border border-devros-gray rounded"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="email"
-                        className="block text-lg text-devros-gray mb-2"
-                      >
-                        Email
-                      </label>
-                      <input
-                        id="email"
-                        type="email"
-                        className="w-full px-4 py-2 border border-devros-gray rounded"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="company"
-                        className="block text-lg text-devros-gray mb-2"
-                      >
-                        Nombre de la empresa
-                      </label>
-                      <input
-                        id="company"
-                        type="text"
-                        className="w-full px-4 py-2 border border-devros-gray rounded"
-                        value={company}
-                        onChange={(e) => setCompany(e.target.value)}
-                      />
-                    </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-devros-gray mb-4">
+                      ¿Quieres saber como la IA puede impulsar tu empresa?
+                    </h3>
+                    <h3 className="text-xl font-semibold text-devros-gray mb-4">
+                      ¡Responde este quiz para averiguarlo!
+                    </h3>
                     <button
-                      onClick={handleSubmitQuiz}
-                      className="mt-4 px-6 py-3 bg-devros-primary-blue text-devros-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
-                      disabled={isSubmitting}
+                      onClick={() => setIsQuizStarted(true)}
+                      className="px-6 py-3 bg-devros-primary-blue text-devros-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
                     >
-                      {isSubmitting ? (
-                        <svg
-                          className="mr-3 h-5 w-5 animate-spin text-white"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                        >
-                          <circle
-                            className="opacity-25"
-                            cx="12"
-                            cy="12"
-                            r="10"
-                            stroke="currentColor"
-                            stroke-width="4"
-                          ></circle>
-                          <path
-                            className="opacity-75"
-                            fill="currentColor"
-                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                          ></path>
-                        </svg>
-                      ) : (
-                        "Enviar Respuestas"
-                      )}
+                      Empezar
                     </button>
                   </div>
-                </div>
-              )
-            ) : (
-              <div>
-                {responseMessage && (
+                </CSSTransition>
+              ) : !isFormSubmitted ? (
+                !isQuizCompleted ? (
+                  <CSSTransition
+                    key={`question-${step}`}
+                    timeout={500}
+                    classNames="fade"
+                    unmountOnExit
+                  >
+                    <div>
+                      <h3 className="text-xl font-semibold text-devros-gray mb-4">
+                        {quizData[step].question}
+                      </h3>
+                      <div className="space-y-4">
+                        {quizData[step].options.map((option) => (
+                          <div
+                            key={option.value}
+                            className="flex justify-center"
+                          >
+                            <button
+                              onClick={() =>
+                                handleAnswerChange(step, option.value)
+                              }
+                              className={`w-full px-6 py-3 text-lg rounded-lg ${
+                                answers[`question${step}`] === option.value
+                                  ? "bg-devros-primary-blue text-white"
+                                  : "bg-devros-primary-blue text-devros-white border border-devros-primary-blue"
+                              } hover:bg-devros-secondary-blue transition duration-300`}
+                            >
+                              {option.label}
+                            </button>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </CSSTransition>
+                ) : (
+                  <CSSTransition
+                    key="form"
+                    timeout={500}
+                    classNames="fade"
+                    unmountOnExit
+                  >
+                    <div>
+                      <h3 className="text-xl font-semibold text-devros-gray mb-4">
+                        ¡Ya casi terminas! Por favor llena tus datos para enviar
+                        tus respuestas.
+                      </h3>
+                      <div className="space-y-4">
+                        <div>
+                          <label
+                            htmlFor="name"
+                            className="block text-lg text-devros-gray mb-2"
+                          >
+                            Nombre
+                          </label>
+                          <input
+                            id="name"
+                            type="text"
+                            className="w-full px-4 py-2 border border-devros-gray rounded"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                          />
+                        </div>
+                        <div>
+                          <label
+                            htmlFor="email"
+                            className="block text-lg text-devros-gray mb-2"
+                          >
+                            Email
+                          </label>
+                          <input
+                            id="email"
+                            type="email"
+                            className="w-full px-4 py-2 border border-devros-gray rounded"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                          />
+                        </div>
+                        <div>
+                          <label
+                            htmlFor="company"
+                            className="block text-lg text-devros-gray mb-2"
+                          >
+                            Nombre de la empresa
+                          </label>
+                          <input
+                            id="company"
+                            type="text"
+                            className="w-full px-4 py-2 border border-devros-gray rounded"
+                            value={company}
+                            onChange={(e) => setCompany(e.target.value)}
+                          />
+                        </div>
+                        <button
+                          onClick={handleSubmitQuiz}
+                          className="mt-4 px-6 py-3 bg-devros-primary-blue text-devros-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
+                          disabled={isSubmitting}
+                        >
+                          {isSubmitting ? (
+                            <svg
+                              className="mr-3 h-5 w-5 animate-spin text-white"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                            >
+                              <circle
+                                className="opacity-25"
+                                cx="12"
+                                cy="12"
+                                r="10"
+                                stroke="currentColor"
+                                stroke-width="4"
+                              ></circle>
+                              <path
+                                className="opacity-75"
+                                fill="currentColor"
+                                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                              ></path>
+                            </svg>
+                          ) : (
+                            "Enviar Respuestas"
+                          )}
+                        </button>
+                      </div>
+                    </div>
+                  </CSSTransition>
+                )
+              ) : (
+                <CSSTransition
+                  key="responseMessage"
+                  timeout={500}
+                  classNames="fade"
+                  unmountOnExit
+                >
                   <div>
-                    <p>{responseMessage.message}</p>
-                    <br />
-                    <p>{responseMessage.solution}</p>
-                    <br />
-                    <p>{responseMessage.nextStep}</p>
-                    <br />
+                    {responseMessage && (
+                      <div>
+                        <p>{responseMessage.message}</p>
+                        <br />
+                        <p>{responseMessage.solution}</p>
+                        <br />
+                        <p>{responseMessage.nextStep}</p>
+                        <br />
+                      </div>
+                    )}
                   </div>
-                )}
-              </div>
-            )}
+                </CSSTransition>
+              )}
+            </TransitionGroup>
           </div>
         </div>
       </div>
