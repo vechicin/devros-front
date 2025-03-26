@@ -239,19 +239,11 @@ const Quiz: React.FC = () => {
       ...prevAnswers,
       [`question${questionIndex}`]: answerValue,
     }));
-  };
 
-  const handleNextStep = () => {
     if (step < quizData.length - 1) {
       setStep(step + 1);
     } else {
       setIsQuizCompleted(true);
-    }
-  };
-
-  const handlePreviousStep = () => {
-    if (step > 0) {
-      setStep(step - 1);
     }
   };
 
@@ -351,23 +343,6 @@ const Quiz: React.FC = () => {
                         </button>
                       </div>
                     ))}
-                  </div>
-
-                  <div className="flex justify-between mt-8">
-                    {step > 0 && (
-                      <button
-                        onClick={handlePreviousStep}
-                        className="px-6 py-3 bg-devros-orange text-devros-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
-                      >
-                        Anterior
-                      </button>
-                    )}
-                    <button
-                      onClick={handleNextStep}
-                      className="px-6 py-3 bg-devros-primary-blue text-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
-                    >
-                      {step === quizData.length - 1 ? "Finalizar" : "Siguiente"}
-                    </button>
                   </div>
                 </div>
               ) : (
