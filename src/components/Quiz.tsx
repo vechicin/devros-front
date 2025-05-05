@@ -304,7 +304,7 @@ const Quiz: React.FC = () => {
     <section id="quiz">
       <div className="container mx-auto px-6 py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-devros-secondary-blue mb-8">
+          <h2 className="text-3xl font-bold text-center text-devros-white mb-8">
             Descubre como la IA puede ayudar a tu negocio
           </h2>
           <div className="bg-devros-white p-8 rounded-lg shadow-lg text-center">
@@ -340,7 +340,7 @@ const Quiz: React.FC = () => {
                     unmountOnExit
                   >
                     <div>
-                      <h3 className="text-xl font-semibold text-devros-gray mb-4">
+                      <h3 className="text-xl font-semibold text-devros-secondary-blue mb-4">
                         {quizData[step].question}
                       </h3>
                       <div className="space-y-4">
@@ -355,8 +355,8 @@ const Quiz: React.FC = () => {
                               }
                               className={`w-full px-6 py-3 text-lg rounded-lg ${
                                 answers[`question${step}`] === option.value
-                                  ? "bg-devros-primary-blue text-white"
-                                  : "bg-devros-primary-blue text-devros-white border border-devros-primary-blue"
+                                  ? "bg-devros-orange text-white"
+                                  : "bg-devros-orange text-devros-white border-devros-orange"
                               } hover:bg-devros-secondary-blue transition duration-300`}
                             >
                               {option.label}

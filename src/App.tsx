@@ -18,6 +18,8 @@ import ContactForm from "./components/ContactForm";
 import "swiper/swiper-bundle.css";
 import CardCarousel from "./components/CardCarousel";
 import Quiz from "./components/Quiz";
+import SectionWithVideo from "./components/SectionWithVideo";
+import aboutVideo from "./assets/159053-818026314_small.mp4";
 
 function App() {
   const cardData = [
@@ -78,8 +80,8 @@ function App() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-devros-secondary-blue to-devros-primary-blue text-white py-20 md:py-32">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-10"></div>
+      <section className="relative bg-devros-secondary-blue text-white py-20 md:py-32">
+        {/* <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-10"></div> */}
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -101,32 +103,34 @@ function App() {
       </section>
 
       {/* About Us Section */}
-      <section id="about" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-              Acerca De
-            </h2>
-            <p className="text-lg text-gray-700 mb-8">
-              En Devros, nuestra misión es potenciar a empresas de todos los
-              tamaños mediante soluciones de inteligencia artificial
-              personalizadas, mejorando la eficiencia operativa, reduciendo
-              costos, optimizando la experiencia de los usuarios de nuestros
-              clientes y tomando decisiones basadas en datos. Nos apasiona
-              democratizar la inteligencia artificial, haciendo accesible su
-              implementación a través de una consultoría estratégica y
-              entrenamiento especializado en IA, adaptado a cada organización.
-            </p>
-            <div className="flex justify-center">
-              <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                alt="Devros Team"
-                className="rounded-lg shadow-xl max-w-full h-auto"
-              />
+      <SectionWithVideo videoSrc={aboutVideo}>
+        <div id="about" className="py-20">
+          <div className="container mx-auto px-6">
+            <div className="max-w-3xl mx-auto text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-devros-white-900">
+                Acerca De
+              </h2>
+              <p className="text-2xl text-devros-white-700 mb-8">
+                En Devros, nuestra misión es potenciar a empresas de todos los
+                tamaños mediante soluciones de inteligencia artificial
+                personalizadas, mejorando la eficiencia operativa, reduciendo
+                costos, optimizando la experiencia de los usuarios de nuestros
+                clientes y tomando decisiones basadas en datos. Nos apasiona
+                democratizar la inteligencia artificial, haciendo accesible su
+                implementación a través de una consultoría estratégica y
+                entrenamiento especializado en IA, adaptado a cada organización.
+              </p>
+              {/* <div className="flex justify-center">
+                <img
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="Devros Team"
+                  className="rounded-lg shadow-xl max-w-full h-auto invisible"
+                />
+              </div> */}
             </div>
           </div>
         </div>
-      </section>
+      </SectionWithVideo>
 
       {/* Services Section */}
       <section id="services" className="py-20">
@@ -151,7 +155,7 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-              Como Funciona
+              ¿Cómo Funciona?
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               Nuestro proceso optimizado garantiza que te entregamos soluciones
@@ -315,15 +319,12 @@ function App() {
         </div>
       </section> */}
       {/* Quiz Section */}
-      <section
-        id="quiz"
-        className="py-10 bg-gradient-to-r from-devros-orange to-devros-orange-100"
-      >
+      <section id="quiz" className="py-10 bg-devros-secondary-blue">
         <Quiz />
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-devros-gray-100">
+      <section id="contact" className="py-20 bg-devros-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
