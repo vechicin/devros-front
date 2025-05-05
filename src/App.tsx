@@ -1,16 +1,16 @@
 // import React from "react";
 import {
-  Phone,
+  // Phone,
   Mail,
   ArrowRight,
   Users,
   Workflow,
   Bot,
   Zap,
-  Linkedin,
-  Twitter,
-  Facebook,
-  Instagram,
+  // Linkedin,
+  // Twitter,
+  // Facebook,
+  // Instagram,
 } from "lucide-react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -348,14 +348,14 @@ function App() {
                   <div>
                     <p className="font-semibold text-gray-900">Email</p>
                     <a
-                      href="mailto:info@devros.ai"
+                      href="mailto:contact@devros.ai"
                       className="text-blue-600 hover:underline"
                     >
-                      info@devros.ai
+                      contact@devros.ai
                     </a>
                   </div>
                 </div>
-                <div className="flex items-start mt-5">
+                {/* <div className="flex items-start mt-5">
                   <div className="bg-blue-100 p-3 rounded-full mr-4">
                     <Phone className="h-6 w-6 text-blue-600" />
                   </div>
@@ -397,7 +397,7 @@ function App() {
                       <Instagram className="h-5 w-5" />
                     </a>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
