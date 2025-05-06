@@ -3,7 +3,7 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
-    "homepage": "https://vechicin.github.io/devros-front",
+    "homepage": "https://devros.ai",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
