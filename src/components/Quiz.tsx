@@ -325,7 +325,7 @@ const Quiz: React.FC = () => {
                     </h3>
                     <button
                       onClick={() => setIsQuizStarted(true)}
-                      className="px-6 py-3 bg-devros-primary-blue text-devros-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
+                      className="px-6 py-3 bg-devros-orange text-devros-white rounded-lg hover:bg-devros-secondary-blue transition duration-300"
                     >
                       Empezar
                     </button>

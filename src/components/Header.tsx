@@ -33,17 +33,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <a href="#" className="flex items-center">
-            <Icon size={130} />
-            {/* <Bot
-              className={`h-8 w-8 ${
-                isScrolled ? "text-devros-secondary-blue" : "text-devros-white"
-              }`}
-            /> */}
-            <span
-              className={`hidden sm:inline ml-2 text-xl font-bold text-devros-white`}
-            >
-              Devros
-            </span>
+            <Icon size={165} />
           </a>
 
           {/* Desktop Navigation */}
@@ -76,7 +66,7 @@ const Header = () => {
                   : "hover:text-devros-primary-blue transition duration-300 "
               }`}
             >
-              Como Funciona
+              ¿Cómo Funciona?
             </a>
             <a
               href="#quiz"
@@ -158,7 +148,7 @@ const Header = () => {
                 className="font-medium text-gray-700 hover:text-blue-500 transition duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Como Funciona
+                ¿Cómo Funciona?
               </a>
               <a
                 href="#quiz"

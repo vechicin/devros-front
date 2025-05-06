@@ -16,11 +16,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="md:col-span-1">
             <div className="flex items-center mb-4">
-              <Icon size={130} />
-              {/* <Bot className="h-8 w-8 text-devros-primary-blue" /> */}
-              <span className="hidden sm:inline ml-2 text-xl font-bold">
-                Devros
-              </span>
+              <Icon size={165} />
             </div>
             <p className="text-devros-gray mb-6">
               Transformando tu empresa con soluciones impulsadas por IA.

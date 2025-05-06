@@ -232,8 +232,8 @@ const ContactForm = () => {
           disabled={isSubmitting}
           className={`w-full flex items-center justify-center px-6 py-3 rounded-lg text-devros-white font-semibold transition duration-300 ${
             isSubmitting
-              ? "bg-devros-primary-blue cursor-not-allowed"
-              : "bg-devros-primary-blue hover:bg-blue-700"
+              ? "bg-devros-orange cursor-not-allowed"
+              : "bg-devros-orange hover:bg-devros-secondary-blue"
           }`}
         >
           {isSubmitting ? (
