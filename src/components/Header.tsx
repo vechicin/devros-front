@@ -39,7 +39,9 @@ const Header = () => {
                 isScrolled ? "text-devros-secondary-blue" : "text-devros-white"
               }`}
             /> */}
-            <span className={`ml-2 text-xl font-bold text-devros-white`}>
+            <span
+              className={`hidden sm:inline ml-2 text-xl font-bold text-devros-white`}
+            >
               Devros
             </span>
           </a>

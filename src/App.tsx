@@ -82,7 +82,7 @@ function App() {
       {/* Hero Section */}
       <section className="relative bg-devros-secondary-blue text-white py-20 md:py-32">
         {/* <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-10"></div> */}
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto px-6 relative z-10 mt-10 sm:mt-0">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Implementamos soluciones de Inteligencia Artificial en tu negocio
@@ -110,7 +110,7 @@ function App() {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-devros-white-900">
                 Acerca De
               </h2>
-              <p className="text-2xl text-devros-white-700 mb-8">
+              <p className="text-devros-white-700 mb-8 sm:text-2xl">
                 En Devros, nuestra misión es potenciar a empresas de todos los
                 tamaños mediante soluciones de inteligencia artificial
                 personalizadas, mejorando la eficiencia operativa, reduciendo
