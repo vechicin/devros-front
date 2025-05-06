@@ -81,7 +81,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-devros-white rounded-lg shadow-lg p-8">
+    <div className="bg-devros-white rounded-lg shadow-lg p-8 border border-devros-gray">
       {submitSuccess ? (
         <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
           <p>

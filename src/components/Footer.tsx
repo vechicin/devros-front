@@ -1,4 +1,10 @@
-import { Bot, Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
+import // Bot,
+// Linkedin,
+// Twitter,
+// Facebook,
+// Instagram
+"lucide-react";
+import Icon from "./Icon";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,14 +16,14 @@ const Footer = () => {
           {/* Company Info */}
           <div className="md:col-span-1">
             <div className="flex items-center mb-4">
-              <Bot className="h-8 w-8 text-devros-primary-blue" />
+              <Icon size={130} />
+              {/* <Bot className="h-8 w-8 text-devros-primary-blue" /> */}
               <span className="ml-2 text-xl font-bold">Devros</span>
             </div>
             <p className="text-devros-gray mb-6">
-              Transformando la atención al cliente con soluciones impulsadas por
-              IA.
+              Transformando tu empresa con soluciones impulsadas por IA.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a
                 href="#"
                 className="text-devros-gray hover:text-devros-white transition duration-300"
@@ -42,7 +48,7 @@ const Footer = () => {
               >
                 <Instagram className="h-5 w-5" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -73,14 +79,14 @@ const Footer = () => {
                   Como Funciona
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="#testimonials"
                   className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
                   Testimonios
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href="#contact"
@@ -189,10 +195,10 @@ const Footer = () => {
                   href="mailto:info@devros.ai"
                   className="text-devros-primary-blue hover:text-blue-300 transition duration-300"
                 >
-                  info@devros.ai
+                  contact@devros.ai
                 </a>
               </li>
-              <li className="text-devros-gray">
+              {/* <li className="text-devros-gray">
                 <span className="block">Teléfono:</span>
                 <a
                   href="tel:+1234567890"
@@ -200,7 +206,7 @@ const Footer = () => {
                 >
                   +1 (234) 567-890
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
