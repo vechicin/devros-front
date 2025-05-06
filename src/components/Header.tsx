@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Bot, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Icon from "./Icon";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,11 +33,12 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <a href="#" className="flex items-center">
-            <Bot
+            <Icon size={130} />
+            {/* <Bot
               className={`h-8 w-8 ${
                 isScrolled ? "text-devros-secondary-blue" : "text-devros-white"
               }`}
-            />
+            /> */}
             <span className={`ml-2 text-xl font-bold text-devros-white`}>
               Devros
             </span>

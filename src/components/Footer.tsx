@@ -1,10 +1,10 @@
-import {
-  Bot,
-  // Linkedin,
-  // Twitter,
-  // Facebook,
-  // Instagram
-} from "lucide-react";
+import // Bot,
+// Linkedin,
+// Twitter,
+// Facebook,
+// Instagram
+"lucide-react";
+import Icon from "./Icon";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,12 +16,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="md:col-span-1">
             <div className="flex items-center mb-4">
-              <Bot className="h-8 w-8 text-devros-primary-blue" />
+              <Icon size={130} />
+              {/* <Bot className="h-8 w-8 text-devros-primary-blue" /> */}
               <span className="ml-2 text-xl font-bold">Devros</span>
             </div>
             <p className="text-devros-gray mb-6">
-              Transformando la atención al cliente con soluciones impulsadas por
-              IA.
+              Transformando tu empresa con soluciones impulsadas por IA.
             </p>
             {/* <div className="flex space-x-4">
               <a
