@@ -1,17 +1,78 @@
-hero-header: "We implement Artificial Intelligence solutions for your business"
-hero-subtitle: "Process automation, chatbots, AI consulting, AI training for your company."
-button: "Contact Us"
+hero-header: "Empowering your business with tailored AI solutions"
+hero-subtitle: "From process automation and intelligent chatbots to AI consulting and team training, we help you unlock the full potential of artificial intelligence."
+button: "Get in Touch"
 about-header: "About Us"
-about-subtitle: "At Devros, our mission is to empower businesses of all sizes through customized artificial intelligence solutions, improving operational efficiency, reducing costs, optimizing our clients' user experience, and making data-driven decisions. We are passionate about democratizing artificial intelligence, making its implementation accessible through strategic consulting and specialized AI training tailored to each organization."
+about-subtitle: "Devros's mission is to empower businesses of all sizes through customized artificial intelligence solutions, helping them improve operational efficiency, reduce costs, enhance customer experience, and make smarter, data-driven decisions. We are passionate about democratizing AI, making its implementation accessible through strategic consulting and specialized training tailored to each organization."
 services-header: "Our Services"
 services-subtitle: "We specialize in the design and development of AI agents, smart chatbots, and process automation solutions that adapt to the specific requirements of each business:"
 cards:
   automation:
     title: "Process Automation"
-    description: "We optimize your operations through intelligent process automation, reducing times, costs and errors. Improve your business' efficiency with tailored AI solutions."
+    description: "We optimize your operations with intelligent process automation, reducing time, costs, and errors, and boosting your business efficiency with tailor-made AI solutions."
   customer-service:
-    title: "AI Agent/Chatbot - Customer Services"
-    description: "We develop smart customer service chatbots that respond to inquiries 24/7, improving the user experience and reducing your teams' workloads."
+    title: "AI Agent/Chatbot - Customer Service"
+    description: "We develop intelligent customer service chatbots that respond to inquiries 24/7, enhancing user experience and reducing the workload on your support teams."
   sales:
     title: "AI Agent/Chatbot - Sales and CRM"
-    description: "Boost your sales with AI agents that manage prospects, qualify leads, and automate tasks in your CRM, improving your conversion rate and client tracking."
+    description: "Boost your sales with AI agents that manage prospects, qualify leads, and automate CRM tasks, improving conversion rates and customer follow-up."
+  logistics:
+    title: "AI Agent/Chatbot — Procurement and Logistics"
+    description: "We implement intelligent chatbots that streamline procurement and logistics management, accelerating order processing, shipment tracking, and real-time inventory control."
+  marketing:
+    title: "AI Agent/Chatbot - Marketing"
+    description: "Create personalized campaigns with AI-powered marketing agents. Automate responses, segment audiences, and enhance engagement across multiple channels."
+  virtual-assistant:
+    title: "AI Agent/Chatbot — Virtual Assistant"
+    description: "We design intelligent virtual assistants that organize schedules, manage emails, and boost productivity for administrative tasks."
+  legal-assistant:
+    title: "AI Agent/Chatbot — Legal Assistant"
+    description: "We offer AI-powered legal assistants that help draft documents, analyze contracts, and manage basic legal inquiries quickly and securely."
+  consulting:
+    title: "AI Consulting"
+    description: "We guide you through the entire AI implementation process. Our consulting services adapt cutting-edge technology to your business needs."
+  training:
+    title: "AI Training"
+    description: "We train your teams in artificial intelligence, helping them understand, adopt, and apply AI solutions to their daily operations."
+  dashboards:
+    title: "Smart Dashboard Development"
+    description: "We build smart dashboards that integrate real-time data and predictive analytics, empowering better, faster, and more strategic decision-making."
+how-it-works-header: "How It Works"
+how-it-works-subtitle: "Our streamlined process ensures we deliver AI solutions that fit your business needs perfectly."
+understand-header: "Understand"
+understand-subtitle: "We analyze your current systems and dive deep into your specific business requirements."
+design-header: "Design"
+design-subtitle: "We create customized workflows and conversation flows tailored to your customer experience."
+develop-header: "Develop"
+develop-subtitle: "We build and integrate AI solutions that seamlessly connect with your existing systems."
+support-header: "Support"
+support-subtitle: "We provide ongoing support, updates, and enhancements to ensure optimal performance."
+quiz:
+  title: "Discover how AI can help your business"
+  startPromptFirstLine: "Curious about how AI could transform your company?"
+  startPrompt:SecondLine: "Take this quiz to find out!"
+  buttons:
+    start: "Start"
+    submit: "Submit Answers"
+    loading: "Submitting…"
+  questions:
+    question0:
+      text: "What is your company's size?"
+      options:
+        microempresa: "Microbusiness (1-10 employees)"
+        pequeña: "Small Business (11-50 employees)"
+        mediana: "Medium Business (51-200 employees)"
+        grande: "Large Business (200+ employees)"
+    question1:
+      text: "Which industry best describes your company?"
+      options:
+        tecnología: "💻 Technology / Software"
+        ecommerce: "🛒 E-commerce / Retail"
+        logística: "🚚 Logistics / Transportation"
+        legal: "⚖️ Legal Services"
+        salud: "🏥 Healthcare / Medical"
+        educación: "🎓 Education"
+        marketing: "📢 Marketing / Advertising / Media"
+        construcción: "🏗️ Real Estate / Construction"
+        finanzas: "🏦 Finance / Banking / Insurance"
+        energía: "♻️ Energy / Environment"
+        otros: "🔧 Other"

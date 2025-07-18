@@ -15,3 +15,64 @@ cards:
   sales:
     title: "Agente IA/Chatbot - Ventas y CRM"
     description: "Impulsa tus ventas con agentes IA que gestionan prospectos, califican leads y automatizan tareas en tu CRM, mejorando la conversión y el seguimiento de clientes."
+  logistics:
+    title: "Agente IA/Chatbot - Gestión de Compras y Logística"
+    description: "Implementamos chatbots inteligentes que optimizan la gestión de compras y logística, agilizando órdenes, seguimiento de envíos y control de inventarios en tiempo real."
+  marketing:
+    title: "Agente IA/Chatbot - Marketing"
+    description: "Crea campañas personalizadas con agentes IA para marketing. Automatiza respuestas, segmenta audiencias y mejora la interacción con tus clientes en múltiples canales."
+  virtual-assistant:
+    title: "Agente IA/Chatbot - Asistente Virtual"
+    description: "Desarrollamos asistentes virtuales inteligentes que organizan agendas, gestionan correos y mejoran la productividad en tareas administrativas."
+  legal-assistant:
+    title: "Agente IA/Chatbot - Asistente Legal"
+    description: "Ofrecemos asistentes legales con IA que ayudan a redactar documentos, analizar contratos y gestionar solicitudes legales básicas de forma rápida y segura."
+  consulting:
+    title: "Consultoría en IA"
+    description: "Te guiamos en todo el proceso de implementación de inteligencia artificial. Nuestro servicio de consultoría en IA adapta la tecnología a las necesidades de tu negocio."
+  training:
+    title: "Entrenamiento IA"
+    description: "Capacitamos a tus equipos con entenamiento en inteligencia artificial, ayudándoles a comprender, adoptar y aplicar soluciones de IA en sus procesos diarios."
+  dashboards:
+    title: "Creación de Dashboards Inteligentes"
+    description: "Desarrollamos dashboards inteligentes que integran datos en tiempo real y análisis predictivo, facilitando la toma de decisiones estratégicas basadas e inteligencia artificial."
+how-it-works-header: "¿Cómo Funciona?"
+how-it-works-subtitle: "Nuestro proceso optimizado garantiza que te entregamos soluciones de IA que se adaptan perfectamente a las necesidades de tu negocio."
+understand-header: "Entender"
+understand-subtitle: "Analizamos tus sistemas de soporte actuales y entendemos tus requisitos comerciales específicos."
+design-header: "Diseñar"
+design-subtitle: "Creamos flujos de trabajos personalizados y flujos de conversación adaptados a la experiencia de tus clientes."
+develop-header: "Desarrollar"
+develop-subtitle: "Creamos e integramos soluciones de IA que se conectan sin problemas con tus sistemas existenes."
+support-header: "Soporte"
+support-subtitle: "Brindamos soporte, actualizaciones y mejoras contínuas para garantizar un rendimiento óptimo."
+quiz:
+  title: "Descubre como la IA puede ayudar a tu negocio"
+  startPromptFirstLine: "¿Quieres saber como la IA puede impulsar tu empresa? ¡Responde este quiz para averiguarlo!"
+  startPrompt:SecondLine: "¡Responde este quiz para averiguarlo!"
+  buttons:
+    start: "Start"
+    submit: "Submit Answers"
+    loading: "Submitting…"
+  questions:
+    question0:
+      text: "What is your company's size?"
+      options:
+        microempresa: "Microbusiness (1-10 employees)"
+        pequeña: "Small Business (11-50 employees)"
+        mediana: "Medium Business (51-200 employees)"
+        grande: "Large Business (200+ employees)"
+    question1:
+      text: "Which industry best describes your company?"
+      options:
+        tecnología: "💻 Technology / Software"
+        ecommerce: "🛒 E-commerce / Retail"
+        logística: "🚚 Logistics / Transportation"
+        legal: "⚖️ Legal Services"
+        salud: "🏥 Healthcare / Medical"
+        educación: "🎓 Education"
+        marketing: "📢 Marketing / Advertising / Media"
+        construcción: "🏗️ Real Estate / Construction"
+        finanzas: "🏦 Finance / Banking / Insurance"
+        energía: "♻️ Energy / Environment"
+        otros: "🔧 Other"
