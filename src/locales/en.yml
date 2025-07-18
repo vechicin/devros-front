@@ -1,0 +1,17 @@
+hero-header: "We implement Artificial Intelligence solutions for your business"
+hero-subtitle: "Process automation, chatbots, AI consulting, AI training for your company."
+button: "Contact Us"
+about-header: "About Us"
+about-subtitle: "At Devros, our mission is to empower businesses of all sizes through customized artificial intelligence solutions, improving operational efficiency, reducing costs, optimizing our clients' user experience, and making data-driven decisions. We are passionate about democratizing artificial intelligence, making its implementation accessible through strategic consulting and specialized AI training tailored to each organization."
+services-header: "Our Services"
+services-subtitle: "We specialize in the design and development of AI agents, smart chatbots, and process automation solutions that adapt to the specific requirements of each business:"
+cards:
+  automation:
+    title: "Process Automation"
+    description: "We optimize your operations through intelligent process automation, reducing times, costs and errors. Improve your business' efficiency with tailored AI solutions."
+  customer-service:
+    title: "AI Agent/Chatbot - Customer Services"
+    description: "We develop smart customer service chatbots that respond to inquiries 24/7, improving the user experience and reducing your teams' workloads."
+  sales:
+    title: "AI Agent/Chatbot - Sales and CRM"
+    description: "Boost your sales with AI agents that manage prospects, qualify leads, and automate tasks in your CRM, improving your conversion rate and client tracking."

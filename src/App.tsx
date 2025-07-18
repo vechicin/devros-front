@@ -20,8 +20,10 @@ import CardCarousel from "./components/CardCarousel";
 import Quiz from "./components/Quiz";
 import SectionWithVideo from "./components/SectionWithVideo";
 import aboutVideo from "./assets/159053-818026314_small.mp4";
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const { t } = useTranslation();
   const cardData = [
     {
       title: "Automatización de Procesos",
@@ -85,17 +87,16 @@ function App() {
         <div className="container mx-auto px-6 relative z-10 mt-10 sm:mt-0">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Implementamos soluciones de Inteligencia Artificial en tu negocio
+              {t("hero-header")}
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-devros-white">
-              Automatización de procesos, chatbots, consultoría en IA,
-              entrenamiento en IA para tu empresa.
+              {t("hero-subtitle")}
             </p>
             <a
               href="#contact"
               className="inline-flex items-center bg-devros-orange text-devros-white font-semibold px-6 py-3 rounded-lg hover:bg-devros-primary-blue hover:text-devros-white transition duration-300"
             >
-              Contáctanos
+              {t("button")}
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
           </div>
@@ -108,25 +109,11 @@ function App() {
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-devros-white-900">
-                Acerca De
+                {t("about-header")}
               </h2>
               <p className="text-devros-white-700 mb-8 sm:text-2xl">
-                En Devros, nuestra misión es potenciar a empresas de todos los
-                tamaños mediante soluciones de inteligencia artificial
-                personalizadas, mejorando la eficiencia operativa, reduciendo
-                costos, optimizando la experiencia de los usuarios de nuestros
-                clientes y tomando decisiones basadas en datos. Nos apasiona
-                democratizar la inteligencia artificial, haciendo accesible su
-                implementación a través de una consultoría estratégica y
-                entrenamiento especializado en IA, adaptado a cada organización.
+                {t("about-subtitle")}
               </p>
-              {/* <div className="flex justify-center">
-                <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                  alt="Devros Team"
-                  className="rounded-lg shadow-xl max-w-full h-auto invisible"
-                />
-              </div> */}
             </div>
           </div>
         </div>
@@ -137,12 +124,10 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-              Nuestros Servicios
+              {t("services-header")}
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              Nos especializamos en el diseño y desarrollo de agentes de IA,
-              chatbots inteligentes, y soluciones de automatización de procesos
-              que se adaptan a las necesidades específicas de cada negocio:
+              {t("services-subtitle")}
             </p>
           </div>
 
