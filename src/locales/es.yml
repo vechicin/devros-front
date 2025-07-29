@@ -51,28 +51,101 @@ quiz:
   startPromptFirstLine: "¿Quieres saber como la IA puede impulsar tu empresa? ¡Responde este quiz para averiguarlo!"
   startPrompt:SecondLine: "¡Responde este quiz para averiguarlo!"
   buttons:
-    start: "Start"
+    start: "Empezar"
     submit: "Submit Answers"
     loading: "Submitting…"
   questions:
     question0:
-      text: "What is your company's size?"
+      text: "¿Cuál es el tamaño de tu empresa?"
       options:
-        microempresa: "Microbusiness (1-10 employees)"
-        pequeña: "Small Business (11-50 employees)"
-        mediana: "Medium Business (51-200 employees)"
-        grande: "Large Business (200+ employees)"
+        microempresa: "Microempresa (1-10 empleados)"
+        pequeña: "Pequeña (11-50 empleados)"
+        mediana: "Mediana (51-200 empleados)"
+        grande: "Grande (200+ empleados)"
     question1:
-      text: "Which industry best describes your company?"
+      text: "¿A qué industria pertenece tu empresa?"
       options:
-        tecnología: "💻 Technology / Software"
+        tecnología: "💻 Tecnología / Software"
         ecommerce: "🛒 E-commerce / Retail"
-        logística: "🚚 Logistics / Transportation"
-        legal: "⚖️ Legal Services"
-        salud: "🏥 Healthcare / Medical"
-        educación: "🎓 Education"
-        marketing: "📢 Marketing / Advertising / Media"
-        construcción: "🏗️ Real Estate / Construction"
-        finanzas: "🏦 Finance / Banking / Insurance"
-        energía: "♻️ Energy / Environment"
-        otros: "🔧 Other"
+        logística: "🚚 Logística / Transporte"
+        legal: "⚖️ Servicios Legales"
+        salud: "🏥 Salud / Medicina"
+        educación: "🎓 Educación"
+        marketing: "📢 Marketing / Publicidad / Medios"
+        construcción: "🏗️ Construcción / Inmobiliaria"
+        finanzas: "🏦 Finanzas / Banca / Seguros"
+        energía: "♻️ Energía / Medio Ambiente"
+        otros: "🔧 Otra"
+    question2:
+      text: "¿Qué cargo ocupas dentro de tu empresa?"
+      options:
+        ceo: "CEO / Fundador"
+        cto: "Director de Tecnología"
+        coo: "Director de Operaciones"
+        commercial_director: "Director Comercial / Ventas"
+        cmo: "Director de Marketing"
+        customer_service_manager: "Director de Servicio al Cliente"
+        hr_manager: "Director de Recursos Humanos"
+        other: "Otro"
+    question3:
+      text: "¿Cuál es el mayor desafío de tu empresa hoy?"
+      options:
+        customer_service: "Atención al cliente lenta o con consultas repetitivas"
+        sales: "Ventas ineficientes y falta de seguimiento a clientes"
+        logistics: "Proceso de compras y logística con muchas tareas manuales"
+        marketing: "Marketing poco personalizado y baja interacción con clientes"
+        automation: "Falta de automatización en tareas internas (agenda, emails, reportes)"
+        analytics: "Dificultad para analizar datos y tomar decisiones estratégicas"
+    question4:
+      text: "¿Qué tan digitalizada está tu empresa?"
+      options:
+        high: "Muy digitalizados, pero queremos automatizar y escalar más"
+        medium: "⚙️ Usamos herramientas digitales, pero hay muchas tareas manuales"
+        low: "📝 Dependemos bastante de procesos manuales"
+        not_sure: "❓ No estoy seguro; necesitamos una evaluación"
+    question5:
+      text: "¿Cuánto tiempo pierde tu equipo en tareas repetitivas?"
+      options:
+        high: "Mucho tiempo, necesitamos automatizar más"
+        medium: "Algunas tareas podrían optimizarse"
+        low: "No es un problema importante para nosotros"
+        not_sure: "No lo sé con certeza, pero es algo que queremos revisar"
+    question6:
+      text: "¿Tu empresa actualmente usa algún tipo de Inteligencia Artificial o automatización?"
+      options:
+        expand: "Sí, pero queremos expandir su uso a otras áreas"
+        explore: "No, pero estamos explorando opciones"
+        no_use: "No, y no estamos seguros de como empezar"
+        no_plans: "No y por ahora no está en nuestros planes"
+    question7:
+      text: "¿Tu equipo está capacitado para adoptar soluciones de Inteligencia Artificial?"
+      options:
+        experienced: "Sí, tienen experiencia previa"
+        training: "No, pero nos gustaría capacitarlos"
+        ready_made: "No, preferimos soluciones listas para usar, sin necesidad de capacitación"
+        not_sure: "No estamos seguros; necesitamos orientación"
+  responses:
+    attention:
+      message: '💡 "Tus clientes buscan respuestas rápidas, pero tu equipo no puede atender todas las consultas al instante. Con un chatbot inteligente, puedes responder preguntas frecuentes 24/7, reducir la carga de trabajo y mejorar la experiencia del cliente sin aumentar costos."'
+      solution: '👉 Solución recomendada: Implementación de un chatbot para atención al cliente con integración a WhatsApp y web.'
+      next_step: '✅ Próximo paso: Agenda una llamada con nuestro equipo para explorar cómo podríamos personalizar esta solución para tu negocio.'
+    sales:
+      message: '💡 "El 79% de los leads se pierden por falta de seguimiento. Un agente IA para ventas puede calificar prospectos, responder preguntas en tiempo real y automatizar recordatorios, ayudando a cerrar más ventas sin esfuerzo extra."'
+      solution: '👉 Solución recomendada: Chatbot para ventas y CRM que capture y califique leads automáticamente.'
+      next_step: '✅ Próximo paso: Descarga nuestra guía gratuita sobre IA en ventas y agenda una consultoría con nosotros.'
+    logistics:
+      message: '💡 "Optimizar la cadena de suministro con IA reduce errores y tiempos de respuesta. Un chatbot puede ayudar a gestionar órdenes, hacer seguimiento de envíos y automatizar reportes en tiempo real."'
+      solution: '👉 Solución recomendada: Chatbot de gestión para compras y logística, con integración a tus sistemas actuales.'
+      next_step: '✅ Próximo paso: Solicita una demo y descubre cómo mejorar tu logística con IA.'
+    marketing:
+      message: '💡 "Las empresas que usan IA en marketing incrementan la conversión en un 50% y la retención de clientes hasta un 35% (Forrester)."'
+      solution: '👉 Solución recomendada: Agente IA para Marketing que personaliza la comunicación y aumenta el engagement.'
+      next_step: '✅ Próximo paso: Agendar Sesión de Diagnóstico de Marketing AI'
+    automation:
+      message: '💡 "Las empresas que automatizan tareas administrativas logran un incremento de productividad de hasta el 40%."'
+      solution: '👉 Solución recomendada: Implementa un Asistente Virtual IA para gestionar agendas, correos, recordatorios y reportes automáticos.'
+      next_step: '✅ Próximo paso: Solicita tu Demo de Asistente Virtual IA'
+    analytics:
+      message: '💡 "El 87% de las organizaciones considera que los dashboards de IA mejoran significativamente el desempeño de sus áreas clave (Gartner)."'
+      solution: '👉 Solución recomendada: Dashboards Inteligentes customizados para tu negocio.'
+      next_step: '✅ Próximo paso: Agenda tu Demo de Dashboard Inteligente'
