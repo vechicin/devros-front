@@ -52,8 +52,8 @@ quiz:
   startPrompt:SecondLine: "¡Responde este quiz para averiguarlo!"
   buttons:
     start: "Empezar"
-    submit: "Submit Answers"
-    loading: "Submitting…"
+    submit: "Enviar respuestas"
+    loading: "Enviando…"
   questions:
     question0:
       text: "¿Cuál es el tamaño de tu empresa?"

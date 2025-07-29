@@ -47,16 +47,16 @@ develop-subtitle: "We build and integrate AI solutions that seamlessly connect w
 support-header: "Support"
 support-subtitle: "We provide ongoing support, updates, and enhancements to ensure optimal performance."
 quiz:
-  title: "Discover how AI can help your business"
+  title: "Discover How AI Can Help Your Business"
   startPromptFirstLine: "Curious about how AI could transform your company?"
-  startPrompt:SecondLine: "Take this quiz to find out!"
+  startPrompt:SecondLine: "Take this quick quiz to find out!"
   buttons:
     start: "Start"
     submit: "Submit Answers"
     loading: "Submitting…"
   questions:
     question0:
-      text: "What is your company's size?"
+      text: "What's your company size?"
       options:
         microempresa: "Microbusiness (1-10 employees)"
         pequeña: "Small Business (11-50 employees)"
@@ -76,3 +76,76 @@ quiz:
         finanzas: "🏦 Finance / Banking / Insurance"
         energía: "♻️ Energy / Environment"
         otros: "🔧 Other"
+    question2:
+      text: "What's your role within the company?"
+      options:
+        ceo: "CEO / Founder"
+        cto: "Chief Technology Officer (CTO)"
+        coo: "Chief Operating Officer (COO)"
+        commercial_director: "Head of Sales / Commercial Director"
+        cmo: "Chief Marketing Officer (CMO)"
+        customer_service_manager: "Customer Service Manager"
+        hr_manager: "Human Resources Manager"
+        other: "Other"
+    question3:
+      text: "What is your company's biggest challenge today?"
+      options:
+        customer_service: "Slow customer service or repetitive inquiries"
+        sales: "Inefficient sales processes and poor client follow-up"
+        logistics: "Procurement and logistics with too many manual steps"
+        marketing: "Unpersonalized marketing and low customer engagement"
+        automation: "Lack of automation in internal tasks (scheduling, emails, reporting)"
+        analytics: "Difficulty analyzing data and making strategic decisions"
+    question4:
+      text: "How digitalized is your company today?"
+      options:
+        high: "Highly digitalized, but we want to automate and scale even more"
+        medium: "⚙️ We use digital tools, but many processes are still manual"
+        low: "📝 We mostly rely on manual processes"
+        not_sure: "❓ Not sure — we need an assessment"
+    question5:
+      text: "How much time does your team spend on repetitive tasks?"
+      options:
+        high: "A lot — we urgently need more automations"
+        medium: "Some tasks could definitely be optimized"
+        low: "It's not a major issue for us"
+        not_sure: "I'm not sure, but it's something we want to review"
+    question6:
+      text: "Is your company currently using AI or automations?"
+      options:
+        expand: "Yes, but we want to expand it to other areas"
+        explore: "No, but we are exploring options"
+        no_use: "No, and we're not sure how to start"
+        no_plans: "No, and it's not a current priority"
+    question7:
+      text: "Is your team ready to adopt AI solutions?"
+      options:
+        experienced: "Yes, they already have experience"
+        training: "No, but we would like to train them"
+        ready_made: "No, we prefer plug-and-play solutions without training"
+        not_sure: "Not sure — we need guidance"
+  responses:
+    attention:
+      message: '💡 “Your customers expect lightning-fast answers, but your team cannot address every inquiry in real time. An AI-powered customer support chatbot lets you deliver 24/7 FAQ responses, reduce agent workload, and enhance customer experience — all without increasing costs.”'
+      solution: '👉 Recommended Solution: Deploy a customer service chatbot with seamless WhatsApp and web integration for instant support.'
+      next_step: '✅ Next Step: Schedule a call with our team to see how we can tailor this AI chatbot solution for your business.'
+    sales:
+      message: '💡 “Did you know 79% of leads slip through the cracks due to lack of follow-up? An AI sales agent can automatically score prospects, answer questions in real time, and send timely reminders, helping you close more deals with zero extra effort.”'
+      solution: '👉 Recommended Solution: Implement a sales & CRM chatbot that captures, qualifies, and nurtures leads end-to-end.'
+      next_step: '✅ Next Step: Download our free guide on AI-powered sales and book a personalized consultation today.'
+    logistics:
+      message: '💡 “Streamline your supply chain with AI to minimize errors and speed up order fulfillment. A logistics chatbot can manage orders, track shipments, and automate real-time reporting — keeping your operations running smoothly.”'
+      solution: '👉 Recommended Solution: Integrate an AI logistics chatbot with your existing systems for hands-free order management.'
+      next_step: '✅ Next Step: Request a live demo and discover how AI can optimize your logistics workflows.'
+    marketing:
+      message: '💡 “Companies using AI in marketing see up to 50% higher conversion rates and boost customer retention by 35% (Forrester). Leverage intelligent personalization to drive engagement and ROI.”'
+      solution: '👉 Recommended Solution: Deploy an AI marketing agent that delivers personalized campaigns and maximizes engagement.'
+      next_step: '✅ Next Step: Book your AI Marketing Strategy Session.'
+    automation:
+      message: '💡 “Automating administrative tasks with AI can increase productivity by up to 40%. Free your team from routine work and let them focus on high-impact projects.”'
+      solution: '👉 Recommended Solution: Introduce an AI virtual assistant to handle scheduling, email management, reminders, and automated reporting.'
+      next_step: '✅ Next Step: Request your AI Virtual Assistant demo.'
+    analytics:
+      message: '💡 “87% of organizations agree that AI dashboards significantly improve performance in key business areas (Gartner). Turn data into actionable insights with intelligent analytics.”'
+      solution: '👉 Recommended Solution: Develop custom AI-driven dashboards tailored to your company KPIs.'
+      next_step: '✅ Next Step: Schedule your Intelligent Dashboard demo.'
