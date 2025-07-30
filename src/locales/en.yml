@@ -154,3 +154,7 @@ quiz:
     name: 'Name'
     email: 'Email'
     company: 'Company Name'
+contact:
+  header: 'Contact Us'
+  description: 'Ready to transform your organization with AI? Get in touch today for a free consultation.'
+  info: 'Contact Information'
