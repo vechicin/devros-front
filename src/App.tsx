@@ -275,18 +275,17 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-              Contáctanos
+              {t("contact.header")}
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              ¿Estás listo para transformar tu organización con IA? Contáctanos
-              hoy para una consulta gratuita.
+              {t("contact.description")}
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-12">
             <div>
               <h3 className="text-2xl font-bold mb-6 text-gray-900">
-                Información de Contacto
+                {t("contact.info")}
               </h3>
               <div className="md:flex justify-between items-center">
                 <div className="flex items-start mt-5">
