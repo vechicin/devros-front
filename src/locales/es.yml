@@ -49,10 +49,11 @@ support-subtitle: "Brindamos soporte, actualizaciones y mejoras contínuas para 
 quiz:
   title: "Descubre como la IA puede ayudar a tu negocio"
   startPromptFirstLine: "¿Quieres saber como la IA puede impulsar tu empresa? ¡Responde este quiz para averiguarlo!"
-  startPrompt:SecondLine: "¡Responde este quiz para averiguarlo!"
+  startPromptSecondLine: "¡Responde este quiz para averiguarlo!"
+  formPrompt: "¡Ya casi terminas! Por favor llena tus datos para enviar tus respuestas."
   buttons:
     start: "Empezar"
-    submit: "Enviar respuestas"
+    submit: "Enviar Respuestas"
     loading: "Enviando…"
   questions:
     question0:
@@ -149,3 +150,7 @@ quiz:
       message: '💡 "El 87% de las organizaciones considera que los dashboards de IA mejoran significativamente el desempeño de sus áreas clave (Gartner)."'
       solution: '👉 Solución recomendada: Dashboards Inteligentes customizados para tu negocio.'
       next_step: '✅ Próximo paso: Agenda tu Demo de Dashboard Inteligente'
+  form:
+    name: 'Nombre'
+    email: 'Email'
+    company: 'Nombre de la empresa'

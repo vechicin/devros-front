@@ -49,7 +49,8 @@ support-subtitle: "We provide ongoing support, updates, and enhancements to ensu
 quiz:
   title: "Discover How AI Can Help Your Business"
   startPromptFirstLine: "Curious about how AI could transform your company?"
-  startPrompt:SecondLine: "Take this quick quiz to find out!"
+  startPromptSecondLine: "Take this quick quiz to find out!"
+  formPrompt: "Almost there! Please fill in your details below."
   buttons:
     start: "Start"
     submit: "Submit Answers"
@@ -149,3 +150,7 @@ quiz:
       message: '💡 “87% of organizations agree that AI dashboards significantly improve performance in key business areas (Gartner). Turn data into actionable insights with intelligent analytics.”'
       solution: '👉 Recommended Solution: Develop custom AI-driven dashboards tailored to your company KPIs.'
       next_step: '✅ Next Step: Schedule your Intelligent Dashboard demo.'
+  form:
+    name: 'Name'
+    email: 'Email'
+    company: 'Company Name'
