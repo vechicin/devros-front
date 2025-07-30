@@ -158,3 +158,11 @@ contact:
   header: 'Contáctanos'
   description: '¿Estás listo para transformar tu organización con IA? Contáctanos hoy para una consulta gratuita.'
   info: 'Información de Contacto'
+contact_form:
+  success: 'Gracias por tu mensaje. Nos pondremos en contacto contigo en breve.'
+  error: 'Se produjo un error al enviar tu mensaje. Inténtalo de nuevo.'
+  name: 'Nombre Completo *'
+  company: 'Compañía *'
+  inquiry: 'Tipo de Consulta *'
+  message: 'Mensaje *'
+  consultancy: 'Solicita una Consulta Gratuita'   

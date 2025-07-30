@@ -158,3 +158,11 @@ contact:
   header: 'Contact Us'
   description: 'Ready to transform your organization with AI? Get in touch today for a free consultation.'
   info: 'Contact Information'
+contact_form:
+  success: 'Thank you for your message. We will get in touch soon'
+  error: 'There was an error sending your message. Please try again.'
+  name: 'Full Name *'
+  company: 'Company *'
+  inquiry: 'What is your inquiry about *'
+  message: 'Message *'
+  consultancy: 'Schedule a Free Consultation'   
