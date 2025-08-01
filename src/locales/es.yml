@@ -1,3 +1,10 @@
+header:
+  about: 'Acerca De'
+  services: 'Servicios'
+  how_it_works: '¿Cómo Funciona?'
+  quiz: 'Quiz'
+  contact: 'Contacto'
+  button: 'Contáctanos'
 hero-header: "Implementamos soluciones de Inteligencia Artificial en tu negocio"
 hero-subtitle: "Automatización de procesos, chatbots, consultoría en IA, entrenamiento en IA para tu empresa."
 button: "Contáctanos"

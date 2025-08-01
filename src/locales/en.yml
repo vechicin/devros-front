@@ -1,3 +1,10 @@
+header:
+  about: 'About'
+  services: 'Services'
+  how_it_works: 'How It Works'
+  quiz: 'Quiz'
+  contact: 'Contact'
+  button: 'Contact Us'
 hero-header: "Empowering your business with tailored AI solutions"
 hero-subtitle: "From process automation and intelligent chatbots to AI consulting and team training, we help you unlock the full potential of artificial intelligence."
 button: "Get in Touch"
