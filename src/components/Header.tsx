@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Icon from "./Icon";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { t } = useTranslation();
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -46,7 +49,7 @@ const Header = () => {
                   : "hover:text-devros-primary-blue transition duration-300 "
               }`}
             >
-              Acerca De
+              {t("header.about")}
             </a>
             <a
               href="#services"
@@ -56,7 +59,7 @@ const Header = () => {
                   : "hover:text-devros-primary-blue transition duration-300 "
               }`}
             >
-              Servicios
+              {t("header.services")}
             </a>
             <a
               href="#how-it-works"
@@ -66,7 +69,7 @@ const Header = () => {
                   : "hover:text-devros-primary-blue transition duration-300 "
               }`}
             >
-              ¿Cómo Funciona?
+              {t("header.how_it_works")}
             </a>
             <a
               href="#quiz"
@@ -76,7 +79,7 @@ const Header = () => {
                   : "hover:text-devros-primary-blue transition duration-300 "
               }`}
             >
-              Quiz
+              {t("header.quiz")}
             </a>
             <a
               href="#contact"
@@ -86,7 +89,7 @@ const Header = () => {
                   : "hover:text-devros-primary-blue transition duration-300 "
               }`}
             >
-              Contacto
+              {t("header.contact")}
             </a>
           </nav>
 
@@ -99,7 +102,7 @@ const Header = () => {
                 : "bg-devros-orange text-devros-white hover:bg-devros-primary-blue"
             }`}
           >
-            Contáctanos
+            {t("header.button")}
           </a>
 
           {/* Mobile Menu Button */}
@@ -134,42 +137,42 @@ const Header = () => {
                 className="font-medium text-gray-700 hover:text-blue-500 transition duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Acerca De
+                {t("header.about")}
               </a>
               <a
                 href="#services"
                 className="font-medium text-gray-700 hover:text-blue-500 transition duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Servicios
+                {t("header.services")}
               </a>
               <a
                 href="#how-it-works"
                 className="font-medium text-gray-700 hover:text-blue-500 transition duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
-                ¿Cómo Funciona?
+                {t("header.how_it_works")}
               </a>
               <a
                 href="#quiz"
                 className="font-medium text-gray-700 hover:text-blue-500 transition duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Quiz
+                {t("header.quiz")}
               </a>
               <a
                 href="#contact"
                 className="font-medium text-gray-700 hover:text-blue-500 transition duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contacto
+                {t("header.contact")}
               </a>
               <a
                 href="#contact"
                 className="inline-block px-5 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contáctanos
+                {t("header.button")}
               </a>
             </nav>
           </div>

@@ -1,0 +1,209 @@
+header:
+  about: 'Acerca De'
+  services: 'Servicios'
+  how_it_works: '¿Cómo Funciona?'
+  quiz: 'Quiz'
+  contact: 'Contacto'
+  button: 'Contáctanos'
+hero-header: "Implementamos soluciones de Inteligencia Artificial en tu negocio"
+hero-subtitle: "Automatización de procesos, chatbots, consultoría en IA, entrenamiento en IA para tu empresa."
+button: "Contáctanos"
+about-header: Acerca De
+about-subtitle: "En Devros, nuestra misión es potenciar a empresas de todos los tamaños mediante soluciones de inteligencia artificial personalizadas, mejorando la eficiencia operativa, reduciendo costos, optimizando la experiencia de los usuarios de nuestros clientes y tomando decisiones basadas en datos. Nos apasiona democratizar la inteligencia artificial, haciendo accesible su implementación a través de una consultoría estratégica y entrenamiento especializado en IA, adaptado a cada organización."
+services-header: "Nuestros Servicios"
+services-subtitle: "Nos especializamos en el diseño y desarrollo de agentes de IA, chatbots inteligentes, y soluciones de automatización de procesos que se adaptan a las necesidades específicas de cada negocio:"
+cards:
+  automation:
+    title: "Automatización de Procesos"
+    description: "Optimizamos tus operaciones mediante la automatización inteligente de procesos, reduciendo tiempos, costos y errores. Mejora la eficiencia de tu negocio con soluciones IA a la medida."
+  customer-service:
+    title: "Agente IA/Chatbot - Servicio al Cliente"
+    description: "Desarrollamos chatbots inteligentes de atención al cliente que responden consultas 24/7, mejorando la experiencia de usuario y reduciendo la carga de trabajo de tus equipos."
+  sales:
+    title: "Agente IA/Chatbot - Ventas y CRM"
+    description: "Impulsa tus ventas con agentes IA que gestionan prospectos, califican leads y automatizan tareas en tu CRM, mejorando la conversión y el seguimiento de clientes."
+  logistics:
+    title: "Agente IA/Chatbot - Gestión de Compras y Logística"
+    description: "Implementamos chatbots inteligentes que optimizan la gestión de compras y logística, agilizando órdenes, seguimiento de envíos y control de inventarios en tiempo real."
+  marketing:
+    title: "Agente IA/Chatbot - Marketing"
+    description: "Crea campañas personalizadas con agentes IA para marketing. Automatiza respuestas, segmenta audiencias y mejora la interacción con tus clientes en múltiples canales."
+  virtual-assistant:
+    title: "Agente IA/Chatbot - Asistente Virtual"
+    description: "Desarrollamos asistentes virtuales inteligentes que organizan agendas, gestionan correos y mejoran la productividad en tareas administrativas."
+  legal-assistant:
+    title: "Agente IA/Chatbot - Asistente Legal"
+    description: "Ofrecemos asistentes legales con IA que ayudan a redactar documentos, analizar contratos y gestionar solicitudes legales básicas de forma rápida y segura."
+  consulting:
+    title: "Consultoría en IA"
+    description: "Te guiamos en todo el proceso de implementación de inteligencia artificial. Nuestro servicio de consultoría en IA adapta la tecnología a las necesidades de tu negocio."
+  training:
+    title: "Entrenamiento IA"
+    description: "Capacitamos a tus equipos con entenamiento en inteligencia artificial, ayudándoles a comprender, adoptar y aplicar soluciones de IA en sus procesos diarios."
+  dashboards:
+    title: "Creación de Dashboards Inteligentes"
+    description: "Desarrollamos dashboards inteligentes que integran datos en tiempo real y análisis predictivo, facilitando la toma de decisiones estratégicas basadas e inteligencia artificial."
+how-it-works-header: "¿Cómo Funciona?"
+how-it-works-subtitle: "Nuestro proceso optimizado garantiza que te entregamos soluciones de IA que se adaptan perfectamente a las necesidades de tu negocio."
+understand-header: "Entender"
+understand-subtitle: "Analizamos tus sistemas de soporte actuales y entendemos tus requisitos comerciales específicos."
+design-header: "Diseñar"
+design-subtitle: "Creamos flujos de trabajos personalizados y flujos de conversación adaptados a la experiencia de tus clientes."
+develop-header: "Desarrollar"
+develop-subtitle: "Creamos e integramos soluciones de IA que se conectan sin problemas con tus sistemas existenes."
+support-header: "Soporte"
+support-subtitle: "Brindamos soporte, actualizaciones y mejoras contínuas para garantizar un rendimiento óptimo."
+quiz:
+  title: "Descubre como la IA puede ayudar a tu negocio"
+  startPromptFirstLine: "¿Quieres saber como la IA puede impulsar tu empresa? ¡Responde este quiz para averiguarlo!"
+  startPromptSecondLine: "¡Responde este quiz para averiguarlo!"
+  formPrompt: "¡Ya casi terminas! Por favor llena tus datos para enviar tus respuestas."
+  buttons:
+    start: "Empezar"
+    submit: "Enviar Respuestas"
+    loading: "Enviando…"
+  questions:
+    question0:
+      text: "¿Cuál es el tamaño de tu empresa?"
+      options:
+        microempresa: "Microempresa (1-10 empleados)"
+        pequeña: "Pequeña (11-50 empleados)"
+        mediana: "Mediana (51-200 empleados)"
+        grande: "Grande (200+ empleados)"
+    question1:
+      text: "¿A qué industria pertenece tu empresa?"
+      options:
+        tecnología: "💻 Tecnología / Software"
+        ecommerce: "🛒 E-commerce / Retail"
+        logística: "🚚 Logística / Transporte"
+        legal: "⚖️ Servicios Legales"
+        salud: "🏥 Salud / Medicina"
+        educación: "🎓 Educación"
+        marketing: "📢 Marketing / Publicidad / Medios"
+        construcción: "🏗️ Construcción / Inmobiliaria"
+        finanzas: "🏦 Finanzas / Banca / Seguros"
+        energía: "♻️ Energía / Medio Ambiente"
+        otros: "🔧 Otra"
+    question2:
+      text: "¿Qué cargo ocupas dentro de tu empresa?"
+      options:
+        ceo: "CEO / Fundador"
+        cto: "Director de Tecnología"
+        coo: "Director de Operaciones"
+        commercial_director: "Director Comercial / Ventas"
+        cmo: "Director de Marketing"
+        customer_service_manager: "Director de Servicio al Cliente"
+        hr_manager: "Director de Recursos Humanos"
+        other: "Otro"
+    question3:
+      text: "¿Cuál es el mayor desafío de tu empresa hoy?"
+      options:
+        customer_service: "Atención al cliente lenta o con consultas repetitivas"
+        sales: "Ventas ineficientes y falta de seguimiento a clientes"
+        logistics: "Proceso de compras y logística con muchas tareas manuales"
+        marketing: "Marketing poco personalizado y baja interacción con clientes"
+        automation: "Falta de automatización en tareas internas (agenda, emails, reportes)"
+        analytics: "Dificultad para analizar datos y tomar decisiones estratégicas"
+    question4:
+      text: "¿Qué tan digitalizada está tu empresa?"
+      options:
+        high: "Muy digitalizados, pero queremos automatizar y escalar más"
+        medium: "⚙️ Usamos herramientas digitales, pero hay muchas tareas manuales"
+        low: "📝 Dependemos bastante de procesos manuales"
+        not_sure: "❓ No estoy seguro; necesitamos una evaluación"
+    question5:
+      text: "¿Cuánto tiempo pierde tu equipo en tareas repetitivas?"
+      options:
+        high: "Mucho tiempo, necesitamos automatizar más"
+        medium: "Algunas tareas podrían optimizarse"
+        low: "No es un problema importante para nosotros"
+        not_sure: "No lo sé con certeza, pero es algo que queremos revisar"
+    question6:
+      text: "¿Tu empresa actualmente usa algún tipo de Inteligencia Artificial o automatización?"
+      options:
+        expand: "Sí, pero queremos expandir su uso a otras áreas"
+        explore: "No, pero estamos explorando opciones"
+        no_use: "No, y no estamos seguros de como empezar"
+        no_plans: "No y por ahora no está en nuestros planes"
+    question7:
+      text: "¿Tu equipo está capacitado para adoptar soluciones de Inteligencia Artificial?"
+      options:
+        experienced: "Sí, tienen experiencia previa"
+        training: "No, pero nos gustaría capacitarlos"
+        ready_made: "No, preferimos soluciones listas para usar, sin necesidad de capacitación"
+        not_sure: "No estamos seguros; necesitamos orientación"
+  responses:
+    attention:
+      message: '💡 "Tus clientes buscan respuestas rápidas, pero tu equipo no puede atender todas las consultas al instante. Con un chatbot inteligente, puedes responder preguntas frecuentes 24/7, reducir la carga de trabajo y mejorar la experiencia del cliente sin aumentar costos."'
+      solution: '👉 Solución recomendada: Implementación de un chatbot para atención al cliente con integración a WhatsApp y web.'
+      next_step: '✅ Próximo paso: Agenda una llamada con nuestro equipo para explorar cómo podríamos personalizar esta solución para tu negocio.'
+    sales:
+      message: '💡 "El 79% de los leads se pierden por falta de seguimiento. Un agente IA para ventas puede calificar prospectos, responder preguntas en tiempo real y automatizar recordatorios, ayudando a cerrar más ventas sin esfuerzo extra."'
+      solution: '👉 Solución recomendada: Chatbot para ventas y CRM que capture y califique leads automáticamente.'
+      next_step: '✅ Próximo paso: Descarga nuestra guía gratuita sobre IA en ventas y agenda una consultoría con nosotros.'
+    logistics:
+      message: '💡 "Optimizar la cadena de suministro con IA reduce errores y tiempos de respuesta. Un chatbot puede ayudar a gestionar órdenes, hacer seguimiento de envíos y automatizar reportes en tiempo real."'
+      solution: '👉 Solución recomendada: Chatbot de gestión para compras y logística, con integración a tus sistemas actuales.'
+      next_step: '✅ Próximo paso: Solicita una demo y descubre cómo mejorar tu logística con IA.'
+    marketing:
+      message: '💡 "Las empresas que usan IA en marketing incrementan la conversión en un 50% y la retención de clientes hasta un 35% (Forrester)."'
+      solution: '👉 Solución recomendada: Agente IA para Marketing que personaliza la comunicación y aumenta el engagement.'
+      next_step: '✅ Próximo paso: Agendar Sesión de Diagnóstico de Marketing AI'
+    automation:
+      message: '💡 "Las empresas que automatizan tareas administrativas logran un incremento de productividad de hasta el 40%."'
+      solution: '👉 Solución recomendada: Implementa un Asistente Virtual IA para gestionar agendas, correos, recordatorios y reportes automáticos.'
+      next_step: '✅ Próximo paso: Solicita tu Demo de Asistente Virtual IA'
+    analytics:
+      message: '💡 "El 87% de las organizaciones considera que los dashboards de IA mejoran significativamente el desempeño de sus áreas clave (Gartner)."'
+      solution: '👉 Solución recomendada: Dashboards Inteligentes customizados para tu negocio.'
+      next_step: '✅ Próximo paso: Agenda tu Demo de Dashboard Inteligente'
+  form:
+    name: 'Nombre'
+    email: 'Email'
+    company: 'Nombre de la empresa'
+contact:
+  header: 'Contáctanos'
+  description: '¿Estás listo para transformar tu organización con IA? Contáctanos hoy para una consulta gratuita.'
+  info: 'Información de Contacto'
+contact_form:
+  success: 'Gracias por tu mensaje. Nos pondremos en contacto contigo en breve.'
+  error: 'Se produjo un error al enviar tu mensaje. Inténtalo de nuevo.'
+  name: 'Nombre Completo *'
+  company: 'Compañía *'
+  inquiry: 'Tipo de Consulta *'
+  message: 'Mensaje *'
+  consultancy: 'Solicita una Consulta Gratuita'
+  needs: 'Cuéntanos tus necesidades...'
+  options:
+    automation: 'Automatización de Procesos'
+    customer_service: 'Agente IA/Chatbot - Servicio al Cliente'
+    sales: 'Agente IA/Chatbot - Ventas y CRM'
+    logistics: 'Agente IA/Chatbot - Gestión de Compras y Logística'
+    marketing: 'Agente IA/Chatbot - Marketing'
+    virtual_assistant: 'Agente IA/Chatbot - Asistente Virtual'
+    legal_assistant: 'Agente IA/Chatbot - Asistente Legal'
+    consultancy: 'Consultoría en IA'
+    training: 'Entrenamiento IA'
+    dashboards: 'Creación de Dashboards Inteligentes'
+    other: 'Otro'
+footer:
+  description: 'Transformando tu empresa con soluciones impulsadas por IA.'
+  about: 'Acerca De'
+  services: 'Servicios'
+  how_it_works: '¿Cómo Funciona?'
+  quiz: 'Quiz'
+  contact: 'Contacto'
+  automation: 'Automatización de Procesos'
+  customer_service: 'Agente IA/Chatbot - Servicio al Cliente'
+  sales: 'Agente IA/Chatbot - Ventas y CRM'
+  logistics: 'Agente IA/Chatbot - Gestión de Compras y Logística'
+  marketing: 'Agente IA/Chatbot - Marketing'
+  virtual_assistant: 'Agente IA/Chatbot - Asistente Virtual'
+  legal_assistant: 'Agente IA/Chatbot - Asistente Legal'
+  consultancy: 'Consultoría en IA'
+  training: 'Entrenamiento IA'
+  dashboards: 'Creación de Dashboards Inteligentes'
+  rights: 'Devros. Todos los derechos reservados'
+  privacy_policy: 'Política de Privacidad'
+  terms_conditions: 'Condiciones de Servicio'
+  cookies: 'Política de Cookies'

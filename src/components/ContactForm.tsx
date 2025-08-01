@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { Send } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -84,13 +87,11 @@ const ContactForm = () => {
     <div className="bg-devros-white rounded-lg shadow-lg p-8 border border-devros-gray">
       {submitSuccess ? (
         <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
-          <p>
-            Gracias por tu mensaje. Nos pondremos en contacto contigo en breve.
-          </p>
+          <p>{t("contact_form.success")}</p>
         </div>
       ) : submitError ? (
         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6">
-          <p>Se produjo un error al enviar tu mensaje. Inténtalo de nuevo.</p>
+          <p>{t("contact_form.error")}</p>
         </div>
       ) : null}
 
@@ -111,7 +112,7 @@ const ContactForm = () => {
               htmlFor="name"
               className="block text-devros-gray font-medium mb-2"
             >
-              Nombre Completo *
+              {t("contact_form.name")}
             </label>
             <input
               type="text"
@@ -151,7 +152,7 @@ const ContactForm = () => {
               htmlFor="company"
               className="block text-devros-gray font-medium mb-2"
             >
-              Compañía *
+              {t("contact_form.company")}
             </label>
             <input
               type="text"
@@ -170,7 +171,7 @@ const ContactForm = () => {
               htmlFor="inquiryType"
               className="block text-devros-gray font-medium mb-2"
             >
-              Tipo de Consulta *
+              {t("contact_form.inquiry")}
             </label>
             <select
               id="inquiryType"
@@ -182,28 +183,35 @@ const ContactForm = () => {
             >
               <option value=""></option>
               <option value="process_automation">
-                Automatización de Procesos
+                {t("contact_form.options.automation")}
               </option>
               <option value="customer_service">
-                Agente IA/Chatbot - Servicio al Cliente
+                {t("contact_form.options.customer_service")}
               </option>
-              <option value="sales">Agente IA/Chatbot - Ventas y CRM</option>
+              <option value="sales">{t("contact_form.options.sales")}</option>
               <option value="logistics">
-                Agente IA/Chatbot - Gestión de Compras y Logística
+                {t("contact_form.options.logistics")}
               </option>
-              <option value="marketing"> Agente IA/Chatbot - Marketing</option>
+              <option value="marketing">
+                {" "}
+                {t("contact_form.options.marketing")}
+              </option>
               <option value="virtual_assistant">
-                Agente IA/Chatbot - Asistente Virtual
+                {t("contact_form.options.virtual_assistant")}
               </option>
               <option value="legal_assistant">
-                Agente IA/Chatbot - Asistente Legal
+                {t("contact_form.options.legal_assistant")}
               </option>
-              <option value="consultancy">Consultoría en IA</option>
-              <option value="training">Entrenamiento IA</option>
+              <option value="consultancy">
+                {t("contact_form.options.consultancy")}
+              </option>
+              <option value="training">
+                {t("contact_form.options.training")}
+              </option>
               <option value="smart_dashboards">
-                Creación de Dashboards Inteligentes
+                {t("contact_form.options.dashboards")}
               </option>
-              <option value="other">Otro</option>
+              <option value="other">{t("contact_form.options.other")}</option>
             </select>
           </div>
         </div>
@@ -213,7 +221,7 @@ const ContactForm = () => {
             htmlFor="message"
             className="block text-devros-gray font-medium mb-2"
           >
-            Mensaje *
+            {t("contact_form.message")}
           </label>
           <textarea
             id="message"
@@ -223,7 +231,7 @@ const ContactForm = () => {
             required
             rows={5}
             className="w-full px-4 py-2 border border-devros-gray rounded-lg focus:ring-2 focus:ring-devros-primary-blue focus:border-devros-primary-blue transition duration-300"
-            placeholder="Cuéntanos tus necesidades..."
+            placeholder={t("contact_form.needs")}
           ></textarea>
         </div>
 
@@ -262,7 +270,7 @@ const ContactForm = () => {
             </>
           ) : (
             <>
-              Solicita una Consulta Gratuita
+              {t("contact_form.consultancy")}
               <Send className="ml-2 h-5 w-5" />
             </>
           )}

@@ -5,8 +5,11 @@ import // Bot,
 // Instagram
 "lucide-react";
 import Icon from "./Icon";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   const currentYear = new Date().getFullYear();
 
   return (
@@ -18,9 +21,7 @@ const Footer = () => {
             <div className="flex items-center mb-4">
               <Icon size={165} />
             </div>
-            <p className="text-devros-gray mb-6">
-              Transformando tu empresa con soluciones impulsadas por IA.
-            </p>
+            <p className="text-devros-gray mb-6">{t("footer.description")}</p>
             {/* <div className="flex space-x-4">
               <a
                 href="#"
@@ -58,7 +59,7 @@ const Footer = () => {
                   href="#about"
                   className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
-                  Acerca De
+                  {t("footer.about")}
                 </a>
               </li>
               <li>
@@ -66,7 +67,7 @@ const Footer = () => {
                   href="#services"
                   className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
-                  Servicios
+                  {t("footer.services")}
                 </a>
               </li>
               <li>
@@ -74,7 +75,7 @@ const Footer = () => {
                   href="#how-it-works"
                   className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
-                  Como Funciona
+                  {t("footer.how_it_works")}
                 </a>
               </li>
               {/* <li>
@@ -90,7 +91,7 @@ const Footer = () => {
                   href="#contact"
                   className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
-                  Contacto
+                  {t("footer.contact")}
                 </a>
               </li>
             </ul>
@@ -98,14 +99,16 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Servicios</h3>
+            <h3 className="text-lg font-semibold mb-4">
+              {t("footer.services")}
+            </h3>
             <ul className="space-y-2">
               <li>
                 <a
                   href="#services"
                   className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
-                  Automatización de Procesos
+                  {t("footer.automation")}
                 </a>
               </li>
               <li>
@@ -113,7 +116,7 @@ const Footer = () => {
                   href="#services"
                   className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
-                  Agente IA/Chatbot - Servicio al Cliente
+                  {t("footer.customer_service")}
                 </a>
               </li>
               <li>
@@ -121,7 +124,7 @@ const Footer = () => {
                   href="#services"
                   className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
-                  Agente IA/Chatbot - Ventas y CRM
+                  {t("footer.sales")}
                 </a>
               </li>
               <li>
@@ -129,7 +132,7 @@ const Footer = () => {
                   href="#services"
                   className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
-                  Agente IA/Chatbot - Gestión de Compras y Logística
+                  {t("footer.logistics")}
                 </a>
               </li>
               <li>
@@ -137,7 +140,7 @@ const Footer = () => {
                   href="#services"
                   className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
-                  Agente IA/Chatbot - Marketing
+                  {t("footer.marketing")}
                 </a>
               </li>
               <li>
@@ -145,7 +148,7 @@ const Footer = () => {
                   href="#services"
                   className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
-                  Agente IA/Chatbot - Asistente Virtual
+                  {t("footer.virtual_assistant")}
                 </a>
               </li>
               <li>
@@ -153,7 +156,7 @@ const Footer = () => {
                   href="#services"
                   className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
-                  Agente IA/Chatbot - Asistente Legal
+                  {t("footer.legal_assistant")}
                 </a>
               </li>
               <li>
@@ -161,7 +164,7 @@ const Footer = () => {
                   href="#services"
                   className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
-                  Consultoría en IA
+                  {t("footer.consultancy")}
                 </a>
               </li>
               <li>
@@ -169,7 +172,7 @@ const Footer = () => {
                   href="#services"
                   className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
-                  Entrenamiento IA
+                  {t("footer.training")}
                 </a>
               </li>
               <li>
@@ -177,7 +180,7 @@ const Footer = () => {
                   href="#services"
                   className="text-devros-gray hover:text-devros-white transition duration-300"
                 >
-                  Creación de Dashboards Inteligentes
+                  {t("footer.dashboards")}
                 </a>
               </li>
             </ul>
@@ -212,26 +215,26 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-devros-gray text-sm">
-              &copy; {currentYear} Devros. Todos los derechos reservados.
+              &copy; {currentYear} {t("footer.rights")}
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a
                 href="#"
                 className="text-devros-gray hover:text-devros-white text-sm transition duration-300"
               >
-                Política de Privacidad
+                {t("footer.privacy_policy")}
               </a>
               <a
                 href="#"
                 className="text-devros-gray hover:text-devros-white text-sm transition duration-300"
               >
-                Condiciones de Servicio
+                {t("footer.terms_conditions")}
               </a>
               <a
                 href="#"
                 className="text-devros-gray hover:text-devros-white text-sm transition duration-300"
               >
-                Política de Cookies
+                {t("footer.cookies")}
               </a>
             </div>
           </div>

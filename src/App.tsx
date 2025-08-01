@@ -20,59 +20,22 @@ import CardCarousel from "./components/CardCarousel";
 import Quiz from "./components/Quiz";
 import SectionWithVideo from "./components/SectionWithVideo";
 import aboutVideo from "./assets/159053-818026314_small.mp4";
+import { useTranslation } from "react-i18next";
 
 function App() {
-  const cardData = [
-    {
-      title: "Automatización de Procesos",
-      description:
-        "Optimizamos tus operaciones mediante la automatización inteligente de procesos, reduciendo tiempos, costos y errores. Mejora la eficiencia de tu negocio con soluciones IA a la medida.",
-    },
-    {
-      title: "Agente IA/Chatbot - Servicio al Cliente",
-      description:
-        "Desarrollamos chatbots inteligentes de atención al cliente que responden consultas 24/7, mejorando la experiencia de usuario y reduciendo la carga de trabajo de tus equipos.",
-    },
-    {
-      title: "Agente IA/Chatbot - Ventas y CRM",
-      description:
-        "Impulsa tus ventas con agentes IA que gestionan prospectos, califican leads y automatizan tareas en tu CRM, mejorando la conversión y el seguimiento de clientes.",
-    },
-    {
-      title: "Agente IA/Chatbot - Gestión de Compras y Logística",
-      description:
-        "Implementamos chatbots inteligentes que optimizan la gestión de compras y logística, agilizando órdenes, seguimiento de envíos y control de inventarios en tiempo real.",
-    },
-    {
-      title: "Agente IA/Chatbot - Marketing",
-      description:
-        "Crea campañas personalizadas con agentes IA para marketing. Automatiza respuestas, segmenta audiencias y mejora la interacción con tus clientes en múltiples canales.",
-    },
-    {
-      title: "Agente IA/Chatbot - Asistente Virtual",
-      description:
-        "Desarrollamos asistentes virtuales inteligentes que organizan agendas, gestionan correos y mejoran la productividad en tareas administrativas.",
-    },
-    {
-      title: "Agente IA/Chatbot - Asistente Legal",
-      description:
-        "Ofrecemos asistentes legales impulsados por IA que facilitan la redacción de documentos, el análisis de contratos y la gestión de consultas legales básicas de forma rápida y segura.",
-    },
-    {
-      title: "Consultoría en IA",
-      description:
-        "Te guiamos en todo el proceso de implementación de inteligencia artificial. Nuestro servicio de consultoría en IA adapta la tecnología a las necesidades de tu negocio.",
-    },
-    {
-      title: "Entrenamiento IA",
-      description:
-        "Capacitamos a tus equipos con entrenamientos en inteligencia artificial, ayudándoles a comprender, adoptar y aplicar soluciones IA en sus procesos diarios.",
-    },
-    {
-      title: "Creación de Dashboards Inteligentes",
-      description:
-        "Desarrollamos dashboards inteligentes que integran datos en tiempo real y análisis predictivo, facilitando la toma de decisiones estratégicas basadas en inteligencia artificial.",
-    },
+  const { t } = useTranslation();
+
+  const cardKeys = [
+    "automation",
+    "customer-service",
+    "sales",
+    "logistics",
+    "marketing",
+    "virtual-assistant",
+    "legal-assistant",
+    "consulting",
+    "training",
+    "dashboards",
   ];
 
   return (
@@ -85,17 +48,16 @@ function App() {
         <div className="container mx-auto px-6 relative z-10 mt-10 sm:mt-0">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Implementamos soluciones de Inteligencia Artificial en tu negocio
+              {t("hero-header")}
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-devros-white">
-              Automatización de procesos, chatbots, consultoría en IA,
-              entrenamiento en IA para tu empresa.
+              {t("hero-subtitle")}
             </p>
             <a
               href="#contact"
               className="inline-flex items-center bg-devros-orange text-devros-white font-semibold px-6 py-3 rounded-lg hover:bg-devros-primary-blue hover:text-devros-white transition duration-300"
             >
-              Contáctanos
+              {t("button")}
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
           </div>
@@ -108,25 +70,11 @@ function App() {
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-devros-white-900">
-                Acerca De
+                {t("about-header")}
               </h2>
               <p className="text-devros-white-700 mb-8 sm:text-2xl">
-                En Devros, nuestra misión es potenciar a empresas de todos los
-                tamaños mediante soluciones de inteligencia artificial
-                personalizadas, mejorando la eficiencia operativa, reduciendo
-                costos, optimizando la experiencia de los usuarios de nuestros
-                clientes y tomando decisiones basadas en datos. Nos apasiona
-                democratizar la inteligencia artificial, haciendo accesible su
-                implementación a través de una consultoría estratégica y
-                entrenamiento especializado en IA, adaptado a cada organización.
+                {t("about-subtitle")}
               </p>
-              {/* <div className="flex justify-center">
-                <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                  alt="Devros Team"
-                  className="rounded-lg shadow-xl max-w-full h-auto invisible"
-                />
-              </div> */}
             </div>
           </div>
         </div>
@@ -137,16 +85,14 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-              Nuestros Servicios
+              {t("services-header")}
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              Nos especializamos en el diseño y desarrollo de agentes de IA,
-              chatbots inteligentes, y soluciones de automatización de procesos
-              que se adaptan a las necesidades específicas de cada negocio:
+              {t("services-subtitle")}
             </p>
           </div>
 
-          <CardCarousel cardArray={cardData} />
+          <CardCarousel cardKeys={cardKeys} />
         </div>
       </section>
 
@@ -155,12 +101,10 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-              ¿Cómo Funciona?
+              {t("how-it-works-header")}
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              Nuestro proceso optimizado garantiza que te entregamos soluciones
-              de IA que se adaptan perfectamente a las necesidades de tu
-              negocio.
+              {t("how-it-works-subtitle")}
             </p>
           </div>
 
@@ -170,10 +114,11 @@ function App() {
               <div className="bg-devros-secondary-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <Users className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Entender</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">
+                {t("understand-header")}
+              </h3>
               <p className="text-gray-700 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                Analizamos tus sistemas de soporte actuales y entendemos tus
-                requisitos comerciales específicos.
+                {t("understand-subtitle")}
               </p>
             </div>
 
@@ -182,10 +127,11 @@ function App() {
               <div className="bg-devros-primary-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <Workflow className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Diseñar</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">
+                {t("design-header")}
+              </h3>
               <p className="text-gray-700 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                Creamos flujos de trabajo personalizados y flujos de
-                conversación adaptados a la experiencia de tus clientes.
+                {t("design-subtitle")}
               </p>
             </div>
 
@@ -195,11 +141,10 @@ function App() {
                 <Bot className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">
-                Desarrollar
+                {t("develop-header")}
               </h3>
               <p className="text-gray-700 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                Creamos e integramos soluciones de IA que se conectan sin
-                problemas con tus sistemas existentes.
+                {t("develop-subtitle")}
               </p>
             </div>
 
@@ -208,10 +153,11 @@ function App() {
               <div className="bg-devros-primary-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <Zap className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Soporte</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">
+                {t("support-header")}
+              </h3>
               <p className="text-gray-700 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                Brindamos soporte, actualizaciones y mejoras continuas para
-                garantizar un rendimiento óptimo.
+                {t("support-subtitle")}
               </p>
             </div>
           </div>
@@ -318,6 +264,7 @@ function App() {
           </div>
         </div>
       </section> */}
+
       {/* Quiz Section */}
       <section id="quiz" className="py-10 bg-devros-secondary-blue">
         <Quiz />
@@ -328,18 +275,17 @@ function App() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-              Contáctanos
+              {t("contact.header")}
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              ¿Estás listo para transformar tu organización con IA? Contáctanos
-              hoy para una consulta gratuita.
+              {t("contact.description")}
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-12">
             <div>
               <h3 className="text-2xl font-bold mb-6 text-gray-900">
-                Información de Contacto
+                {t("contact.info")}
               </h3>
               <div className="md:flex justify-between items-center">
                 <div className="flex items-start mt-5">
