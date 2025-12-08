@@ -36,6 +36,7 @@ function App() {
     "consulting",
     "training",
     "dashboards",
+    "airtable",
   ];
 
   return (
