@@ -43,6 +43,9 @@ cards:
   dashboards:
     title: "Smart Dashboard Development"
     description: "We build smart dashboards that integrate real-time data and predictive analytics, empowering better, faster, and more strategic decision-making."
+  airtable:
+    title: "Airtable Solutions"
+    description: "We design and build fully customized Airtable systems tailored to your workflows. From automated processes to advanced interfaces and integrations, we streamline operations and create powerful, scalable no-code tools for your business."
 how-it-works-header: "How It Works"
 how-it-works-subtitle: "Our streamlined process ensures we deliver AI solutions that fit your business needs perfectly."
 understand-header: "Understand"
